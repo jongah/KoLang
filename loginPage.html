@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Login</title>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script>
+            $(function() {
+                $('.login').click(function() {
+                    var printID = $('.id').val();
+                    var printPASS = $('.pass').val();
+                    if (printID == '' || printPASS == '') {
+                        alert('입력되지 않은 항목이 있습니다.');
+                    }else {
+                        alert('ID : ' + printID + '\nPASS : ' + printPASS);
+                    }
+                    
+                });
+            });
+        </script>
+        <link rel="stylesheet" href="loginPage.css">
+    </head>
+    <body>
+        <!-- 로그인 틀 -->
+        <div class="loginFrame">
+            <!-- 아이콘 -->
+            <div class="icon">
+                <div class="logo"></div>
+            </div>
+
+            <!-- input -->
+            <form class="input">
+                <label>ID</label>
+                <input type="text" class="id">
+                <label>PASS</label>
+                <input type="password" class="pass">
+            </form>
+
+            <!-- login / sign up -->
+            <div class="success">
+                <button class="login" onclick="javascript:btn()">Login</button>
+                <button class="signup">Signup</button>
+            </div>
+        </div>
+    </body>
+</html>
