@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+}
+
+.container {
+    width: 1920px;
+    height: 1080px;
+}
+    .aside {
+        width: 250px;
+        height: 1080px;
+        background-color: aqua;
+        float: left;
+    }
+
+    .content {
+        width: 1670px;
+        height: 1080px;
+        background-color: #3b3b3b;
+        float: right;
+    }
