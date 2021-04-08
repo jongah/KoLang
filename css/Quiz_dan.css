@@ -80,3 +80,15 @@
         border: 1px solid gold;
         margin-top: 50px;
     }
+
+#modal {
+    position: absolute;
+    width: 700px;
+    height: 500px;
+    background-color: orange;
+    border-radius: 20px;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
