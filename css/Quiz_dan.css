@@ -7,18 +7,41 @@
     width: 100vw;
     height: 100vh;
     background-color: red;
-    display: flex;
-    flex-direction: row;
 }
 
 #aside {
-    width: 200px;
+    width: 225px;
     height: 100%;
+    position: fixed;
     background-color: royalblue;
 }
 
 #content {
-    flex: 1;
     height: 100%;
+    text-align: center;
+    padding-left: 225px;
+    display: flex;
+    align-items: center;
     background-color: salmon;
+}
+
+#quiz_box {
+    width: 1400px;
+    height: 250px;
+    background-color: saddlebrown;
+    vertical-align: middle;
+    display: flex;
+    margin: 0 auto;
+}
+
+.quiz {
+    flex: 1;
+}
+
+#left {
+    background-color: sandybrown;
+}
+
+#right {
+    background-color: silver;
 }
