@@ -3,45 +3,109 @@
     padding: 0;
 }
 
+/* 모든 항목의 container */
 #container {
     width: 100vw;
     height: 100vh;
     background-color: red;
 }
 
+/* 사이드바 */
 #aside {
     width: 225px;
     height: 100%;
     position: fixed;
-    background-color: royalblue;
+    display: table;
+    background-color: white;
 }
 
+#side_btn {
+    width: 100%;
+    height: 200px;
+}
+
+#exit {
+    width: 125px;
+    height: 55px;
+    background-color: #2f33af;
+    border-radius: 20px;
+    margin-top: 70px;
+    margin-left: 50px;
+}
+
+#answer_con {
+    width: 100%;
+    height: 100%;
+}
+
+#answer {
+    width: 100px;
+    height: 550px;
+    background-color: yellow;
+    margin-left: 60px;
+}
+
+/* 메인 컨텐츠 */
 #content {
     height: 100%;
-    text-align: center;
     padding-left: 225px;
     display: flex;
     align-items: center;
-    background-color: salmon;
+    background-color: #3b3b3b;
 }
 
-#quiz_box {
+/* 퀴즈 박스 */
+#content_con {
     width: 1400px;
     height: 250px;
-    background-color: saddlebrown;
     vertical-align: middle;
     display: flex;
     margin: 0 auto;
-}
+} 
 
-.quiz {
+/* 왼쪽 : 버튼 2개,  textArea */
+#left {
     flex: 1;
 }
 
-#left {
-    background-color: sandybrown;
+#btn_con {
+    float: left;
+    padding-left: 55px;
+    margin-top: 50px;
+}
+
+.con_btn {
+    width: 45px;
+    height: 35px;
+    border-radius: 20px;
+}
+
+#btn1 {
+    background-color: #fa6b0b;
+}
+
+#btn2 {
+    background-color: #64c647;
+}
+
+#text_area {
+    width: 600px;
+    height: 35px;
+    background-color: #2f33af;
+    border-radius: 20px;
+    display: inline-block;
+    margin-left: 50px;
+    margin-top: 25px;
 }
 
 #right {
-    background-color: silver;
+    flex: 1;
+}
+
+#word {
+    width: 600px;
+    height: 200px;
+    background-color: pink;
+    margin: 0 auto;
+    margin-top: 25px;
 }
