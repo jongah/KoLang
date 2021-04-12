@@ -3,80 +3,109 @@
     padding: 0;
 }
 
-.container {
-    width: 1920px;
+/* 모든 항목의 container */
+#container {
+    width: 100vw;
     height: 100vh;
-    position: relative;
-    margin: 0 auto;
+    background-color: red;
+}
+
+/* 사이드바 */
+#aside {
+    width: 225px;
+    height: 100%;
+    position: fixed;
+    display: table;
+    background-color: white;
+}
+
+#side_btn {
+    width: 100%;
+    height: 200px;
+}
+
+#exit {
+    width: 125px;
+    height: 55px;
+    background-color: #2f33af;
+    border-radius: 20px;
+    margin-top: 70px;
+    margin-left: 50px;
+}
+
+#answer_con {
+    width: 100%;
+    height: 100%;
+}
+
+#answer {
+    width: 100px;
+    height: 550px;
+    background-color: yellow;
+    margin-left: 60px;
+}
+
+/* 메인 컨텐츠 */
+#content {
+    height: 100%;
+    padding-left: 225px;
+    display: flex;
+    align-items: center;
     background-color: #3b3b3b;
 }
 
-.aside {
-    width: 200px;
-    height: 100vh;
-    float: left;
-    text-align: center;
-    background-color: white;
-}
-    .exitBtn {
-        width: 125px;
-        height: 50px;
-        border-radius: 20px;
-        background-color: #2f33af;
-        color: white;
-        margin: 0 auto;
-        margin-top: 55px;
-    }
-    .box1 {
-        width: 100px;
-        height: 800px;
-        border: 1px solid salmon;
-        margin: 0 auto;
-        margin-top: 55px;
-    }
-
-.content {
-    width: 1620px;
-    height: 800px;
-    position: absolute;
-    top: 50%; left: 50%;
-    margin-left: -660px;
-    margin-top: -400px;
-    float: left;
+/* 퀴즈 박스 */
+#content_con {
+    width: 1400px;
+    height: 700px;
+    vertical-align: middle;
     display: flex;
-}
-    .textArea {
-        flex: 1;
-    }
-        .textArea button {
-            width: 45px;
-            height: 40px;
-            border-radius: 20.5px;
-            margin-top: 35px;
-        }
-        .btn1 {
-            background-color: #fa6b0b;
-            margin-left: 50px;
-        }
-        .btn2 {
-            background-color: #64c647;
-            margin-left: 10px;
-        }
-        .text {
-            width: 700px;
-            height: 690px;
-            background-color: #2f33af;
-            border-radius: 20px;
-            position: absolute;
-            top: 50%; left: 25%;
-            margin-left: -350px;
-            margin-top: -300px;
-        }
+    margin: 0 auto;
+} 
 
-    .box2 {
-        flex: 1;
-        width: 100%;
-        height: 400px;
-        border: 1px solid gold;
-        margin-top: 100px;
-    }
+/* 왼쪽 : 버튼 2개,  textArea */
+#left {
+    flex: 1;
+}
+
+#btn_con {
+    float: left;
+    padding-left: 55px;
+    margin-top: 50px;
+}
+
+.con_btn {
+    width: 45px;
+    height: 35px;
+    border-radius: 20px;
+}
+
+#btn1 {
+    background-color: #fa6b0b;
+}
+
+#btn2 {
+    background-color: #64c647;
+}
+
+#text_area {
+    width: 600px;
+    height: 550px;
+    background-color: #2f33af;
+    border-radius: 20px;
+    display: inline-block;
+    margin-left: 50px;
+    margin-top: 25px;
+}
+
+#right {
+    flex: 1;
+}
+
+#word {
+    width: 600px;
+    height: 400px;
+    background-color: pink;
+    margin: 0 auto;
+    margin-top: 125px;
+}
