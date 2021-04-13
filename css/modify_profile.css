@@ -1,5 +1,7 @@
 * {
     margin: 0;
+    padding: 0;
+    font-family: "AppleSDGothicNeoUL00";
 }
 
 body {
@@ -7,10 +9,34 @@ body {
 }
 
 #profile {
-    width: 200px;
-    height: 200px;
+    width: 220px;
+    height: 220px;
     border-radius: 10px;
     margin: 0 auto;
     margin-top: 75px;
     background-color: hotpink;
+}
+
+#input {
+    width: 400px;
+    height: 100%;
+    margin: 0 auto;
+    margin-top: 50px;
+    background-color: yellowgreen;
+}
+
+p {
+    font-size: 20px;
+}
+
+input {
+    margin-bottom: 15px;
+    padding-left: 10px;
+    width: 390px;
+    height: 40px;
+    background-color: #f5dd6a;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    font-size: 18px;
 }
