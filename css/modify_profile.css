@@ -3,14 +3,14 @@
 }
 
 body {
-    width: 100%;
-    height: 100vh;
     background-color: aqua;
 }
 
-#container {
+#profile {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
     margin: 0 auto;
-    width: 650px;
-    height: 100vh;
-    background-color: yellow;
+    margin-top: 75px;
+    background-color: hotpink;
 }
