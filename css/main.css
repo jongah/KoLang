@@ -1,0 +1,134 @@
+@charset "utf-8";
+
+*{ margin: 0;
+  padding: 0;
+} 
+
+a{text-decoration: none;}
+a:link, a:visited, a:hover, a:active{
+                  color: #FFFFFF;
+                  font-family: "나눔바른고딕";
+                  }
+
+#header{width: 100%;
+        height: 120px;
+        background-color: #F3F3F3;
+        }
+
+.top-menu{ margin-left: 150px;
+          }
+
+.top-menu ul{ padding-top: 70px;
+              text-align: center;
+              }
+
+.top-menu ul li{ margin: 0 20px 0 20px;
+                }
+
+.login{ position: relative;
+        float: right;
+        margin-right: 40px;
+        margin-top: 70px;
+      }
+
+.m{ display: inline; 
+    border-radius: 30px;
+    padding: 10px 15px 10px 15px;
+    font-size: 18px;  
+    }
+          
+
+#orange{ background-color: #fa6b0b;
+       }
+         
+#yellow{ background-color: #FABA0B;
+         }
+
+#green{ background-color: #64c647;
+       }
+
+#blue{ background-color: #2F33AF;
+       }
+
+#purple{ background-color: #7E26B0;
+        }
+
+#mypage{ background-color: #A3E98E;
+        }
+
+.main_image{ height: 500px;
+            width: 500px;
+            margin: auto;
+            margin-top: 20px;
+            background-color: rosybrown;
+            }
+
+.start{ text-align: center;
+        margin-top: 40px;
+      }
+
+.start ul li{ padding: 15px 30px 15px 30px;
+              font-size: 22px;  
+            }
+
+#start_test{ margin-top: 150px;
+            }
+
+.button1{ width: 300px;
+          height: 600px;
+          position: absolute;
+        }
+
+.btn{ display: table;
+      text-align: center;
+      border-radius: 30px;
+      margin: 20px 0 0 200px;
+      padding: 10px 30px 10px 30px;
+      font-size: 18px;  
+    }
+
+.view_page{ width: 900px;
+            height: 600px;
+            margin-left: 300px;
+            position: absolute;
+          }
+
+#input_box{ width: 800px;
+            height: 550px;
+            border-radius: 30px;
+            background-color: #2F33AF;
+            margin: auto;
+            margin-top: 20px;
+           
+          }
+
+.button2{ width: 300px;
+          height: 600px;
+          margin-left:1200px;
+        }
+
+#copy{ width: 40px;
+       height: 40px;
+       background-color: #7E26B0;
+       margin: 20px 0 0 0;
+       border-radius: 40%;
+       border: 0px;
+     }
+
+.button3{ width: 800px;
+          height: 100px;
+          margin: auto;
+        }
+
+#button_group{ width: 250px;
+               height: 50px;
+               margin-left: 550px;
+             }
+
+#btn2{ width: 100px;
+       height: 40px;
+       background-color: #64c647;
+       border-radius: 30px;
+       border: 0px;
+       margin: 0 10px 0 10px;
+     }
