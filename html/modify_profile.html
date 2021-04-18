@@ -4,6 +4,12 @@
         <meta charset="UTF-8">
         <title>프로필 수정</title>
         <link rel="stylesheet" href="../css/modify_profile.css">
+        <script type="text/javascript">
+            function change(color)
+            {
+                document.body.style.background=color;
+            }
+        </script>
     </head>
     <body>
         <!-- profile -->
@@ -20,7 +26,13 @@
 
         <!-- color picker -->
         <div id="color_box">
-            
+            <div id="basic_color">
+                <button id="red" class="colors" onclick="change('#fa6b0b')" style="background-color: #fa6b0b;"></button>
+                <button id="orange" class="colors" onclick="change('#faba0b')" style="background-color: #faba0b;"></button>
+                <button id="green" class="colors" onclick="change('#64c647')" style="background-color: #64c647;"></button>
+                <button id="blue" class="colors" onclick="change('#2f33af')" style="background-color: #2f33af;"></button>
+                <button id="purple" class="colors" onclick="change('#7e26b0')" style="background-color: #7e26b0;"></button>
+            </div>
         </div>
 
         <!-- modify button -->
