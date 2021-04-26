@@ -1,0 +1,24 @@
+{
+  "name": "kolang",
+  "version": "1.0.0",
+  "description": "web project!!\r we are SUSUKKANG\r 한글 공부를 도와주는 웹사이트 \r 팀명 : 수수깡",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jongah/KoLang.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jongah/KoLang/issues"
+  },
+  "homepage": "https://github.com/jongah/KoLang#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongodb": "^3.6.6",
+    "mongoose": "^5.12.5"
+  }
+}
