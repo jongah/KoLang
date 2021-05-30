@@ -1,0 +1,170 @@
+@charset "utf-8";
+
+*{ margin: 0;
+  padding: 0;
+} 
+
+a{text-decoration: none;}
+a:link, a:visited, a:hover, a:active{
+                  color: #FFFFFF;
+                  font-family: "나눔바른고딕";
+                  }
+
+#header{width: 100%;
+        height: 120px;
+        background-color: #F3F3F3;
+        }
+
+.logo{ overflow: hidden;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       width: 200px;
+       height: 120px;
+       position: absolute;
+       margin: 20px 0 0 30px;
+      }
+
+.top-menu{ margin-left: 150px;
+          }
+
+.top-menu ul{ padding-top: 70px;
+              text-align: center;
+              }
+
+.top-menu ul li{ margin: 0 20px 0 20px;
+                }
+
+.login{ position: relative;
+        float: right;
+        margin-right: 40px;
+        margin-top: 70px;
+      }
+
+.m{ display: inline; 
+    border-radius: 30px;
+    padding: 10px 15px 10px 15px;
+    font-size: 18px;  
+    }
+          
+
+#orange{ background-color: #fa6b0b;
+      }
+        
+#yellow{ background-color: #FABA0B;
+        }
+
+#green{ background-color: #64c647;
+      }
+
+#blue{ background-color: #2F33AF;
+      }
+
+#purple{ background-color: #7E26B0;
+        }
+
+#mypage{ background-color: #A3E98E;
+        }
+
+#profile{ width: 1200px;
+          height: 350px;
+          background-color: aquamarine;
+          margin: auto;
+        }
+
+#profile_box{ width: 1000px;
+              height: 250px;
+              background-color: #f5dd6a;
+              margin: auto;
+              margin-top: 50px;
+              border-radius: 10px;
+              box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.2);
+            }
+
+#profile_photo{ overflow: hidden;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 200px;
+                height: 200px;
+                border-radius: 10px;
+                position: absolute;
+                margin: 25px 0 0 25px;
+              }
+
+#profile_text{ width: 400px;
+               height: 200px;
+               /* background-color: royalblue; */
+               position: absolute;
+               margin: 25px 0 0 260px;
+             }
+
+#modify{ width: 70px;
+         height: 35px;
+         background-color: #FABA0B;
+         margin-top: 30px;
+         border-radius: 30px;
+         border: 0px;
+         color: #FFFFFF;
+         font-size: 16px;
+       }
+
+#name{ font-size: 30px;
+       color: white;
+       margin-top: 20px;
+     }
+
+#id{ font-size: 20px;
+     color: white;
+     margin-top: 5px;
+   }
+
+#email{ font-size: 20px; 
+        color: white;
+        margin-top: 5px;
+      }
+
+#score{ width: 300px;
+       height: 200px;
+       background-color: #FABA0B;
+       border-radius: 20px;
+       position: absolute;
+       margin: 25px 0 0 675px;
+       color: white;
+      }
+
+#word{ width: 300px;
+       height: 100px;
+       font-size: 25px;
+       
+        }
+
+#sentence{ width: 300px;
+           height: 100px;
+           font-size: 25px;
+        }
+
+#wName{ padding-top: 30px;
+        margin-left: 30px;
+        position: absolute;
+      }
+
+#wScore{ width: 270px; 
+         position: absolute;
+         padding-top: 25px;
+         font-size: 35px;
+         text-align: right;
+        }
+
+#sName{ padding-top: 30px;
+        margin-left: 30px;
+        position: absolute;
+      }
+
+#sScore{ width: 270px; 
+         position: absolute;
+         padding-top: 25px;
+         font-size: 35px;
+         text-align: right;
+        }
+
