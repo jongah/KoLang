@@ -9,27 +9,16 @@
     </head>
     <body>
         <!-- 로그인 틀 -->
-        <div class="loginFrame">
-            <!-- 아이콘 -->
-            <div class="icon">
-                <div class="logo"></div>
-            </div>
+        <div id="loginFrame">
+            <!-- 로고 아이콘 -->
+            <div id="logoIcon"></div>
 
             <!-- input -->
             <form class="input" method = "post" action="/login">
-                <!-- id input -->
-                <label>ID</label>
-                <input type="text" class="id">
-                <!-- pass input -->
-                <label>PASS</label>
-                <input type="password" class="pass">
+                <button id="linkToNaver"></button>
+                <button id="linkToFacebook"></button>
+                <button id="linkToGoogle"></button>
             </form>
-
-            <!-- login / sign up -->
-            <div class="success">
-                <button class="login">Login</button>
-                <button class="signup"><a href="signUp.html">Signup</a></button>
-            </div>
         </div>
     </body> 
 </html>
