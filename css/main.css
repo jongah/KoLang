@@ -14,6 +14,16 @@ a:link, a:visited, a:hover, a:active{
         height: 120px;
         background-color: #F3F3F3;
         }
+        
+.logo{ overflow: hidden;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       width: 200px;
+       height: 120px;
+       position: absolute;
+       margin: 20px 0 0 30px;
+     }
 
 .top-menu{ margin-left: 150px;
           }
@@ -33,7 +43,7 @@ a:link, a:visited, a:hover, a:active{
 
 .m{ display: inline; 
     border-radius: 30px;
-    padding: 10px 15px 10px 15px;
+    padding: 10px 20px 10px 20px;
     font-size: 18px;  
     }
           
