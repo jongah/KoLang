@@ -1,9 +1,10 @@
 function change(color) {
-    document.body.style.background=color;
+    // document.body.style.background=color;
+    document.getElementById("modify").style.background=color;
 }
 
 $(function() {
-    $('.modify').click(function() {
+    $('#modify').click(function() {
         var printPASS = $('.pw').val();
         var printPASSCK = $('.pwck').val();
 
