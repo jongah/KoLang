@@ -6,9 +6,9 @@
 } 
 
 .container{
+  height: 1080px;
   text-align: center;
-  background-color: #e74c3c;
-  overflow: hidden;
+  background-color: #FABA0B;
 }
 
 .box:nth-child(2n-1){
@@ -28,7 +28,7 @@
 
 
 .box p{
-  color: #777;
+  color: #777777;
   font-family:  Lato,"Helvetica Neue" ;
   font-weight: 300;
   position: absolute;
@@ -40,17 +40,8 @@
   margin: 0;
   top:160px;
   background-color: #fff;
-  opacity: 0;
   text-transform: uppercase;
   transition: all .2s ease;
-}
-
-.box:hover p{
-  bottom:0px;
-  top:175px;
-  opacity: 1;
-  transition: all .2s ease;
-  z-index: 2;
 }
 
 
@@ -58,7 +49,7 @@
 /* MEDIA QUERIES */
 @media (max-width: 700px){
   .box{
-    width: 50%;
+    width: 100%;
   }
 
   .box:nth-child(2n-1){
@@ -92,36 +83,35 @@
   content: "";
   position: absolute;
   top: 0px;
-  left: -25px;
-  height: 12px;
-  width: 12px;
+  left: -35px;
+  height: 20px;
+  width: 20px;
   border-radius: 12px;
   -webkit-animation: loader10g 3s ease-in-out infinite;
-      animation: loader10g 3s ease-in-out infinite;
+  animation: loader10g 3s ease-in-out infinite;
 }
 
 .loader10{
   position: relative;
-  width: 12px;
-  height: 12px;
-  top: 46%;
-  left: 46%;
+  width: 20px;
+  height: 20px;
+  top: 50%;
+  left: 50%;
   border-radius: 12px;
   -webkit-animation: loader10m 3s ease-in-out infinite;
-      animation: loader10m 3s ease-in-out infinite;
+  animation: loader10m 3s ease-in-out infinite;
 }
-
 
 .loader10:after{
   content: "";
   position: absolute;
   top: 0px;
-  left: 25px;
-  height: 10px;
-  width: 10px;
+  left: 35px;
+  height: 20px;
+  width: 20px;
   border-radius: 10px;
   -webkit-animation: loader10d 3s ease-in-out infinite;
-      animation: loader10d 3s ease-in-out infinite;
+  animation: loader10d 3s ease-in-out infinite;
 }
 
 @-webkit-keyframes loader10g{
@@ -161,6 +151,7 @@
   75%{background-color: rgba(255, 255, 255, 1);}
   100%{background-color: rgba(255, 255, 255, .2);}
 }
+
 @keyframes loader10d{
   0%{background-color: rgba(255, 255, 255, .2);}
   25%{background-color: rgba(255, 255, 255, .2);}
