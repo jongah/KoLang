@@ -68,34 +68,10 @@
     flex: 1;
 }
 
-#btn_con {
-    float: left;
-    padding-left: 55px;
-    margin-top: 50px;
-}
-
-.con_btn {
-    width: 45px;
-    height: 35px;
-    border-radius: 20px;
-}
-
-#btn1 {
-    background-color: #fa6b0b;
-}
-
-#btn2 {
-    background-color: #64c647;
-}
-
-#text_area {
+#dragFrame {
+    background-color: white;
     width: 600px;
-    height: 35px;
-    background-color: #2f33af;
-    border-radius: 20px;
-    display: inline-block;
-    margin-left: 50px;
-    margin-top: 25px;
+    height: 400px;
 }
 
 #right {
