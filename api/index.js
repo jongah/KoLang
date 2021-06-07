@@ -16,10 +16,10 @@ app.set('view engine', 'ejs');
 app.engine('html', require('ejs').renderFile);
 
 app.use(express.static(path.join(__dirname, 'public')));
-
+//app.use('/process', express.static(__dirname + '/public'));
 //app.get('/', (req, res) => res.send('HelloWorld'))
 app.get('/', function(req, res) {
-  return res.render('test2', {
+  return res.render('main', {
   });
 });
 
