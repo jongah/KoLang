@@ -77,16 +77,38 @@ a:link, a:visited, a:hover, a:active{
         margin-top: 40px;
       }
 
-.select_writing{ width: 400px;
+.select_writing_box{ width: 450px;
                  height: 850px;
                  position: absolute;
-                 margin: 50px;
+                 text-align: left;
+                 margin-top: 50px;
                  background-color: aquamarine;
                }
 
 .main_view{ width: 900px;
             height: 850px;
             position: absolute;
+            text-align: center;
             margin: 50px 0 0 500px;
             background-color: bisque;
           }
+
+.select_writing{ width: 200px;
+                 height: 130px;
+                 border: none;
+                 border-radius: 13px;
+                 text-align: center;
+                 color: white;
+                 font-size: 20px;
+                 margin: 0 0 40px 250px;
+                 box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.2);
+               }
+
+.writing_name{ width: 500px; 
+               height: 50px;
+               border-radius: 30px;  
+             }
+  
+.writing_in{ width: 700px;
+             height: 600px;
+           }
