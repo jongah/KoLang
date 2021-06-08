@@ -27,5 +27,10 @@ app.post('/test', function(req, res) {
   return res.render('test', {
   });
 });
+
+app.get('/logintest', function(req, res) {
+  return res.render('loginTest', {
+  });
+});
 //=============================================================================================
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))
