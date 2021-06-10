@@ -10,6 +10,11 @@ a:link, a:visited, a:hover, a:active{
                   font-family: "나눔바른고딕";
                   }
 
+.wrap{ width: 100%;
+       height: 100%;
+       position: fixed;
+     }
+
 #header{width: 100%;
         height: 120px;
         background-color: #F3F3F3;

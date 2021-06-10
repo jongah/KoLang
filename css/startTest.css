@@ -14,50 +14,90 @@
 
 #purple{ background-color: #7E26B0;}
 
+.wrap{ width: 100%;
+       height: 100%;
+       position: fixed;
+      }
+
  .select_writing_box{ width: 450px;
                       height: 800px;
                       position: absolute;
                       text-align: left;
                       margin-top: 25px;
-                      background-color: aquamarine;
+                      padding-top: 20px;
                     }
 
 .main_view{ width: 900px;
             height: 800px;
             position: absolute;
-            text-align: center;
             margin: 25px 0 0 500px;
             background-color: bisque;
             }
 
-.select_writing{ width: 200px;
-                height: 130px;
+.select_writing{ width: 150px;
+                height: 100px;
                 border: none;
                 border-radius: 13px;
                 color: white;
                 font-size: 20px;
-                margin: 0 0 40px 250px;
+                margin: 25px 0 25px 250px;
                 box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.2);
               }
 
 .writing_name{ width: 500px; 
               height: 50px;
               border-radius: 30px;
+              margin: auto;
               text-align: center;
               color: #FFFFFF;  
               }
+  
+#title{ width: 450px;
+        height: 50px;
+        background-color: cadetblue;
+        text-align: center;
+        margin: auto;
+        font-size: 18px;
+      }
 
 .writing_in{ width: 700px;
             height: 500px;
             border-radius: 30px;
+            margin: auto;
+            margin-top: 50px;
+            padding-top: 20px;
+            color: #FFFFFF;
             }
+  
+.text_input{ width: 650px;
+             height: 450px;
+             margin: auto;
+             overflow: auto;
+             margin-top: 10px;
+             font-size: 20px;
+            }
+
+.text_input::-webkit-scrollbar { width: 15px;
+                                 background-color: #A0A2D3;
+                               }
+                      
+.text_input::-webkit-scrollbar-thumb { height: 50px;
+                                       background-color: #FFFFFF;
+                                     }
 
 .test_start_button{ width: 500px;
                     height: 80px;
                     border-radius: 30px;
+                    margin: auto;
+                    margin-top: 50px;
+                    text-align: center;
                   }
 
-
+.btn{ width: 20px;
+      height: 20px;
+      font-size: 20px;
+      margin: 30px 0 0 20px;
+    }
 
 .submit_start{ width: 80px;
                height: 30px;
@@ -65,5 +105,6 @@
                border: none;
                color: #FFFFFF;
                font-size: 16px;
+               margin-left: 20px;
              }
 
