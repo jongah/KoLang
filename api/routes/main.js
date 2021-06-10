@@ -10,7 +10,7 @@ router.get('/test', function (req, res) {
     console.log("/process/product")
     if ('user' in req.session.passport)       //세션에 유저가 있다면
     {
-        console.log("*******유저 있따******")
+        console.log("*******유저 있따*******")
     }
     else {
         console.log('유저없음');
