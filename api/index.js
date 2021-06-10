@@ -36,7 +36,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 //   return res.render('main', {
 //   });
 // });
-
+//라우터 설정
 app.use('/', require('./routes/main'));
 app.use('/auth', require('./routes/auth'));
 
