@@ -11,4 +11,3 @@ window.onload = function() {
     document.getElementById('exit').addEventListener('click', onClick);
     document.querySelector('.modal_close').addEventListener('click', offClick);              
 };
-            
