@@ -46,7 +46,9 @@ app.post('/api/register', (req, res) => {
 
   //user 모델에 저장
   user.save((err, userInfo) => {
-    if (err) return res.json({ success: false, err })
+    if (err) return res.json({ 
+      success: false, err 
+    })
     return res.status(200).json({
       success: true
     })
