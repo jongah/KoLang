@@ -18,20 +18,19 @@ const contentSchema = new Schema({
 
 const userSchema = new Schema({
     id:{
-        type: String
-    },
-    accessToken:{
-        type: String
+        type: String,
+        unique: 1
     },
     u_name:{
         type: String
     },
     img:{
         type: String, 
-        default: '../public/testImg.jpg'
+        default: '../img/testImg.jpg'
     },
     color:{
-        type: Number
+        type: Number,
+        default: 1
     },
     content:[contentSchema]
 });

@@ -31,21 +31,22 @@ passport.use(new GoogleStrategy(
     console.log('token-------\n', accessToken)
     console.log('token-------\n', refreshToken)
     console.log('provider-------\n', profile.provider)
-    console.log('session : passport : ', req.session)
+    console.log('8888888888888888888888', profile)
 
     //==USER에 저장
 
     //*********
     User.findOne({ id: profile.sub }, (err, user) => {
-      console.log('passport findone id비교')
-      console.log('passport id : ', profile.sub)
-      console.log('database id : ', User.findOne({ id: profile.sub }))
+      // console.log('passport findone id비교')
+      // console.log('passport id : ', profile.sub)
+      // console.log('database id : ', User.findOne({ id: profile.sub }))
       //user가 없다면!!
       if (!user) {
         console.log('===회원가입이 필요한 계정입니닷===')
         //=========
         const user = new User({
-          "id": profile.sub
+          "id": profile.sub,
+          "u_name": profile.displayName,
         })
         //user 모델에 저장
         user.save((err, userInfo) => {

@@ -35,7 +35,7 @@ const authenticateUser = (req, res, next) => {
 
 router.get('/test', authenticateUser, (req, res, next) => {
     console.log('session : 세션체크하는중 : ', req.session)
-    res.render('test');
+    res.render('test', { user: req.user });
 });
 //===========
 
