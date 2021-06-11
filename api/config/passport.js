@@ -40,6 +40,7 @@ passport.use(new GoogleStrategy(
       console.log('passport findone id비교')
       console.log('passport id : ', profile.sub)
       console.log('database id : ', User.findOne({id:profile.sub}))
+      //user가 없다면!!
       if (!user) {
         console.log('회원가입이 필요한 계정입니닷')
       } else{

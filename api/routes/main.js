@@ -7,13 +7,14 @@ router.get('/', function (req, res) {
 });
 
 router.get('/test', function (req, res) {
-    console.log("/process/product")
-    if ('user' in req.session.passport)       //세션에 유저가 있다면
+    console.log("/test")
+    //세션에 passport가 없는지 먼저 검사 후 passport안에 유저가 없는지 확인한다. 처음에 passport가 없어서 오류가 발생한다.
+    if (!('passport' in req.session) || !('user' in req.session.passport))       
     {
-        console.log("*******유저 있따*******")
+        console.log("*******유저 없따*******")
     }
     else {
-        console.log('유저없음');
+        console.log('유저있음');
     }
 });
 
