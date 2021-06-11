@@ -1,11 +1,9 @@
-// routes/auth.js
-
 var express = require('express');
 var router = express.Router();
 var passport = require('../config/passport.js');
 
-router.get('/login', function (req, res) {
-    res.render('auth/login');
+router.get('/loginPage', function (req, res) {
+    res.render('auth/loginPage');
 });
 
 router.get('/logout', function (req, res) {

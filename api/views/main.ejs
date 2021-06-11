@@ -1,10 +1,79 @@
-<!-- views/main.ejs -->
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <title>kolang</title>
 
-<h1>Main Page</h1>
+  <link rel="stylesheet" href="css/main.css" type="text/css">
+  
+  <script>
 
-<% if(!user){ %>
-  <a href="auth/login">Login</a>
-<% } else { %>
-  <p>Welcome <%= user.displayName %></p>
-    <a href="auth/logout">Logout</a>
-<% } %>
+  </script>
+
+  </head>
+  <body>
+    <div id="wrap">
+      <div id="header">
+
+        <div class="logo">
+          <img src="img/kolangLOGO.png" width="200px" height="200px">
+        </div>
+
+        <!-- login button -->
+        <div class="login">
+          <ul>
+            <a href="auth/loginPage"><li id="mypage" class="m">login</li></a>
+          </ul>
+        </div>
+
+        <!-- menu -->
+        <div class="top-menu">
+          <ul>
+            <a href="#"><li id="orange" class="m">start</li></a>
+            <a href="#"><li id="yellow" class="m">my</li></a>
+            <a href="#"><li id="green" class="m">serch</li></a>
+            <a href="#"><li id="blue" class="m">about</li></a>
+            <a href="#"><li id="purple" class="m">dev</li></a>
+          </ul>
+        </div>
+      </div> <!-- end of header -->
+
+      <div id="main_page">
+        <!-- main image -->
+        <div class="main_image"></div>
+
+        <!-- start button -->
+        <div class="start">
+          <ul>
+            <a href="#start_test" class="light"><li id="blue" class="m">start</li></a>
+          </ul>
+        </div>
+
+      </div> <!-- end of main_page -->
+
+      <div id="start_test">
+        <div class="button1">
+          <!-- button으로 고쳐야함 -->
+          <ul>
+            <li id="orange" class="btn">btn1</li> <!-- word -->
+            <li id="orange" class="btn">btn2</li> <!-- sentence -->
+          </ul>
+        </div>
+        <div class="view_page">
+          <div id="input_box"></div>
+        </div>
+        <div class="button2">
+          <button id="copy"></button>
+        </div>
+        <div class="button3">
+          <div id="button_group">
+            <button id="btn2" name="grammer_check"></button> <!-- grammer check -->
+            <button id="btn2" name="test_start"></button> <!-- test_start -->
+          </div>
+        </div>
+      </div> <!-- start_test -->
+
+    </div> <!-- end of wrap -->
+
+  </body>
+</html>
