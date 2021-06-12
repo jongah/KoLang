@@ -4,6 +4,11 @@
    padding: 0;
  }
 
+a{text-decoration: none;}
+a:link, a:visited, a:hover, a:active{ color: #FFFFFF;
+                                      font-family: "나눔바른고딕";
+                                    }
+
 #orange{ background-color: #fa6b0b;}
    
 #yellow{ background-color: #FABA0B;}
@@ -31,7 +36,6 @@
             height: 800px;
             position: absolute;
             margin: 25px 0 0 500px;
-            background-color: bisque;
             }
 
 .select_writing{ width: 150px;
@@ -69,20 +73,21 @@
             color: #FFFFFF;
             }
   
-.text_input{ width: 650px;
+.text_area{ width: 650px;
              height: 450px;
-             margin: auto;
-             overflow: auto;
-             margin-top: 10px;
+             margin: 10px 0 0 25px;
              font-size: 20px;
+             color: #FFFFFF;
+             resize: none;
+             border: none;
             }
 
-.text_input::-webkit-scrollbar { width: 15px;
-                                 background-color: #A0A2D3;
+.text_area::-webkit-scrollbar { width: 15px;
+                                background-color: #A0A2D3;
                                }
                       
-.text_input::-webkit-scrollbar-thumb { height: 50px;
-                                       background-color: #FFFFFF;
+.text_area::-webkit-scrollbar-thumb { height: 50px;
+                                      background-color: #FFFFFF;
                                      }
 
 .test_start_button{ width: 500px;
