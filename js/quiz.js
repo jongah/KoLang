@@ -13,7 +13,61 @@ window.onload = function() {
 };
 
 $(function() {
-    $("button").click(function() {
-        $("#btn").appendTo('#answerBox');
+    $("#btn1").click(function() {
+        $("#btn1").appendTo('#answerBox');
+    });
+});
+
+$(function() {
+    $("#btn2").click(function() {
+        $("#btn2").appendTo('#answerBox');
+    });
+});
+
+$(function() {
+    $("#btn3").click(function() {
+        $("#btn3").appendTo('#answerBox');
+    });
+});
+
+$(function() {
+    $("#btn4").click(function() {
+        $("#btn4").appendTo('#answerBox');
+    });
+});
+
+$(function() {
+    $("#btn5").click(function() {
+        $("#btn5").appendTo('#answerBox');
+    });
+});
+
+$(function() {
+    $("#btn6").click(function() {
+        $("#btn6").appendTo('#answerBox');
+    });
+});
+
+$(function() {
+    $("#btn7").click(function() {
+        $("#btn7").appendTo('#answerBox');
+    });
+});
+
+$(function() {
+    $("#btn8").click(function() {
+        $("#btn8").appendTo('#answerBox');
+    });
+});
+
+$(function() {
+    $("#btn9").click(function() {
+        $("#btn9").appendTo('#answerBox');
+    });
+});
+
+$(function() {
+    $("#btn10").click(function() {
+        $("#btn10").appendTo('#answerBox');
     });
 });
