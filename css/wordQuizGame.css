@@ -31,6 +31,12 @@
     margin: 0 auto;
 }
 
+#answerBox button {
+    width: 110px;
+    height: 45px;
+    margin: 30px 0 0 12.5px;
+}
+
 #wordBox {
     width: 650px;
     height: 150px;
@@ -42,6 +48,12 @@
     display: flex;
     width: 100%;
     height: 75px;
+}
+
+#wordBox button {
+    width: 110px;
+    height: 45px;
+    margin: 15px 0 0 12.5px;
 }
 
 /* modal */
