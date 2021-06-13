@@ -214,10 +214,19 @@ a:link, a:visited, a:hover, a:active{
 
 .check_scorebtn{ width: 200px;
                  height: 50px;
-                 background-color: burlywood;
                  margin-top: 150px;
                  border: none;
                  border-bottom-left-radius: 15px;
                  border-bottom-right-radius: 15px;
                }
+        
+#btn1{background-color: #F3AB95;}
+
+#btn2{background-color: #F5DD6A;}
+
+#btn3{background-color: #A3E98E;}
+
+#btn4{background-color: #7EC5EF;}
+
+#btn5{background-color: #D293F6;}
 
