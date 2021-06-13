@@ -20,8 +20,8 @@
 #logoIcon {
     margin: 0 auto;
     margin-top: 40px;
-    width: 100px;
-    height: 100px;
+    width: 75px;
+    height: 75px;
     border-radius: 8.5px;
 }
 
@@ -35,6 +35,5 @@
     width: 225px;
     height: 40px;
     border: none;
-    margin-top: 30px;
-    
+    margin-top: 90px;
 }
