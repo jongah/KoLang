@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: "AppleSDGothicNeoUL00";
 }
 
 #container {
@@ -59,16 +60,19 @@
 }
 
 /* modal */
-/* .modal_wrap{
+.modal_wrap{
     display: none;
-    width: 500px;
-    height: 500px;
+    width: 800px;
+    height: 600px;
     position: absolute;
     top:50%;
     left: 50%;
-    margin: -250px 0 0 -250px;
+    margin: -300px 0 0 -400px;
     background:#eee;
     z-index: 2;
+    text-align: center;
+    border-radius: 40px;
+    color: white;
 }
 
 .black_bg{
@@ -97,4 +101,59 @@
     height: 100%;
     background:url(https://img.icons8.com/metro/26/000000/close-window.png);
     text-indent: -9999px;
-} */
+}
+
+#title {
+    width: 300px;
+    height: 75px;
+    margin: 0 auto;
+    margin-top: 65px;
+    border-radius: 18px;
+    background-color: #faba0b;
+    line-height: 75px;
+    font-size: 28pt;
+}
+
+#score {
+    font-size: 90pt;
+    display: inline-block;
+    margin-top: 30px;
+    color: #fa6b0b;
+}
+
+#answerWrong {
+    display: flex;
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 110px;
+    height: 45px;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: deeppink;
+}
+
+#answerWrong div {
+    flex: 1;
+    line-height: 45px;
+    font-size: 16pt;
+}
+
+#true {
+    background-color: #fa6b0b;
+}
+
+#wrong {
+    background-color: #64c647;
+}
+
+.modal_wrap button {
+    width: 115px;
+    height: 55px;
+    border-radius: 50px;
+    margin: 75px 10px 0 10px;
+    background-color: #7e26b0;
+    color: white;
+    font-size: 18pt;
+    border: none;
+    outline: none;
+}
