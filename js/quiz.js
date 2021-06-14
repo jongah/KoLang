@@ -8,16 +8,16 @@ window.onload = function() {
         document.querySelector('.black_bg').style.display ='none';
     }
                 
-    document.getElementById('exit').addEventListener('click', onClick);
+    document.getElementById('endBtn').addEventListener('click', onClick);
     document.querySelector('.modal_close').addEventListener('click', offClick);              
 };
 
 $(function() {
-    $("#btn1").on('click', function() {
+    $("#btn1").on("click", function() {
         $("#btn1").prependTo('#answerBox');
     });
 
-    $("#endBtn").on('click', function() {
+    $("#endBtn").on("click", function() {
         $("#btn1").off();
     });
 });
@@ -74,11 +74,6 @@ $(function() {
     $("#btn10").click(function() {
         $("#btn10").prependTo('#answerBox');
     });
-});
-
-// answerBox
-$(function() {
-   
 });
 
 $(function() {
