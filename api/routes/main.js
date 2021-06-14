@@ -6,6 +6,10 @@ router.get('/', function (req, res) {
     res.render('main', { user: req.user });
 });
 
+router.get('/dev', function (req, res) {
+    res.render('Dev');
+});
+
 router.get('/test', function (req, res) {
     console.log("/test")
     //세션에 passport가 없는지 먼저 검사 후 passport안에 유저가 없는지 확인한다. 처음에 passport가 없어서 오류가 발생한다.
