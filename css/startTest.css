@@ -28,14 +28,15 @@ a:link, a:visited, a:hover, a:active{ color: #FFFFFF;
                       height: 800px;
                       position: absolute;
                       text-align: left;
-                      margin-top: 25px;
+                      margin-top: 10px;
                       padding-top: 20px;
                     }
 
 .main_view{ width: 900px;
             height: 800px;
             position: absolute;
-            margin: 25px 0 0 500px;
+            vertical-align: middle;
+            margin: 10px 0 0 500px;
             }
 
 .select_writing{ width: 150px;
@@ -44,7 +45,7 @@ a:link, a:visited, a:hover, a:active{ color: #FFFFFF;
                 border-radius: 13px;
                 color: white;
                 font-size: 20px;
-                margin: 25px 0 25px 250px;
+                margin: 20px 0 20px 250px;
                 box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.2);
               }
 
@@ -55,20 +56,26 @@ a:link, a:visited, a:hover, a:active{ color: #FFFFFF;
               text-align: center;
               color: #FFFFFF;  
               }
-  
-#title{ width: 450px;
-        height: 50px;
-        background-color: cadetblue;
-        text-align: center;
-        margin: auto;
-        font-size: 18px;
+
+.title{ width: 400px;
+        height: auto;
+        margin-top: 10px;
+        color: #FFFFFF;
+        font-size: 25px;
+        resize: none;
+        border: none;
+        overflow: hidden;
       }
+
+.title::placeholder{ color: rgb(236, 236, 236);
+                     font-style: italic;
+                   }
 
 .writing_in{ width: 700px;
             height: 500px;
             border-radius: 30px;
             margin: auto;
-            margin-top: 50px;
+            margin-top: 40px;
             padding-top: 20px;
             color: #FFFFFF;
             }
@@ -82,6 +89,10 @@ a:link, a:visited, a:hover, a:active{ color: #FFFFFF;
              border: none;
             }
 
+.text_area::placeholder{ color: rgb(236, 236, 236);
+                         font-style: italic;
+                       }
+
 .text_area::-webkit-scrollbar { width: 15px;
                                 background-color: #A0A2D3;
                                }
@@ -91,25 +102,25 @@ a:link, a:visited, a:hover, a:active{ color: #FFFFFF;
                                      }
 
 .test_start_button{ width: 500px;
-                    height: 80px;
+                    height: 60px;
                     border-radius: 30px;
                     margin: auto;
-                    margin-top: 50px;
+                    margin-top: 40px;
                     text-align: center;
                   }
 
 .btn{ width: 20px;
       height: 20px;
       font-size: 20px;
-      margin: 30px 0 0 20px;
+      margin: 18px 0 0 20px;
     }
 
-.submit_start{ width: 80px;
-               height: 30px;
+.submit_start{ width: 100px;
+               height: 40px;
                border-radius: 30px;
                border: none;
                color: #FFFFFF;
-               font-size: 16px;
+               font-size: 20px;
                margin-left: 20px;
              }
 

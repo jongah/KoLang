@@ -210,14 +210,25 @@ a:link, a:visited, a:hover, a:active{
             margin-left: 30px;
             border-radius: 15px;
             box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            color: #FFFFFF;
+            font-size: 28px;
           }
+
+.ck_score{ width: 200px;
+           height: auto;
+           margin-top: 65px;
+         }
 
 .check_scorebtn{ width: 200px;
                  height: 50px;
-                 margin-top: 150px;
+                 margin-top: 50px;
                  border: none;
                  border-bottom-left-radius: 15px;
                  border-bottom-right-radius: 15px;
+                 text-align: center;
+                 color: #FFFFFF;
+                 font-size: 16px;
                }
         
 #btn1{background-color: #F3AB95;}
