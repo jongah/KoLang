@@ -30,14 +30,17 @@ a:link, a:visited, a:hover, a:active{
        margin: 20px 0 0 30px;
      }
 
-.top-menu{ margin-left: 150px;
+.top-menu{ margin-left: 150px;              text-align: center;
+
           }
 
-.top-menu ul{ padding-top: 70px;
-              text-align: center;
-              }
-
-.top-menu ul li{ margin: 0 20px 0 20px;
+.top-menu button{ margin: 0 20px 0 20px; 
+        width: 100px;
+        height: 45px;
+        margin-top: 55px;
+        color: white;
+        border: none;
+        outline: none;
                 }
 
 .login{ position: relative;
@@ -49,7 +52,7 @@ a:link, a:visited, a:hover, a:active{
 .m{ display: inline; 
     border-radius: 30px;
     padding: 10px 20px 10px 20px;
-    font-size: 18px;  
+    font-size: 18px; 
     }
           
 
