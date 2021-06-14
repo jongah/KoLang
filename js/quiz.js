@@ -13,61 +13,124 @@ window.onload = function() {
 };
 
 $(function() {
-    $("#btn1").click(function() {
-        $("#btn1").appendTo('#answerBox');
+    $("#btn1").on('click', function() {
+        $("#btn1").prependTo('#answerBox');
+    });
+
+    $("#endBtn").on('click', function() {
+        $("#btn1").off();
     });
 });
 
 $(function() {
     $("#btn2").click(function() {
-        $("#btn2").appendTo('#answerBox');
+        $("#btn2").prependTo('#answerBox');
     });
 });
 
 $(function() {
     $("#btn3").click(function() {
-        $("#btn3").appendTo('#answerBox');
+        $("#btn3").prependTo('#answerBox');
     });
 });
 
 $(function() {
     $("#btn4").click(function() {
-        $("#btn4").appendTo('#answerBox');
+        $("#btn4").prependTo('#answerBox');
     });
 });
 
 $(function() {
     $("#btn5").click(function() {
-        $("#btn5").appendTo('#answerBox');
+        $("#btn5").prependTo('#answerBox');
     });
 });
 
 $(function() {
     $("#btn6").click(function() {
-        $("#btn6").appendTo('#answerBox');
+        $("#btn6").prependTo('#answerBox');
     });
 });
 
 $(function() {
     $("#btn7").click(function() {
-        $("#btn7").appendTo('#answerBox');
+        $("#btn7").prependTo('#answerBox');
     });
 });
 
 $(function() {
     $("#btn8").click(function() {
-        $("#btn8").appendTo('#answerBox');
+        $("#btn8").prependTo('#answerBox');
     });
 });
 
 $(function() {
     $("#btn9").click(function() {
-        $("#btn9").appendTo('#answerBox');
+        $("#btn9").prependTo('#answerBox');
     });
 });
 
 $(function() {
     $("#btn10").click(function() {
-        $("#btn10").appendTo('#answerBox');
+        $("#btn10").prependTo('#answerBox');
+    });
+});
+
+// answerBox
+$(function() {
+   
+});
+
+$(function() {
+    $("#btn2").click(function() {
+        $("#btn2").prependTo('#answerBox');
+    });
+});
+
+$(function() {
+    $("#btn3").click(function() {
+        $("#btn3").prependTo('#answerBox');
+    });
+});
+
+$(function() {
+    $("#btn4").click(function() {
+        $("#btn4").prependTo('#answerBox');
+    });
+});
+
+$(function() {
+    $("#btn5").click(function() {
+        $("#btn5").prependTo('#answerBox');
+    });
+});
+
+$(function() {
+    $("#btn6").click(function() {
+        $("#btn6").prependTo('#answerBox');
+    });
+});
+
+$(function() {
+    $("#btn7").click(function() {
+        $("#btn7").prependTo('#answerBox');
+    });
+});
+
+$(function() {
+    $("#btn8").click(function() {
+        $("#btn8").prependTo('#answerBox');
+    });
+});
+
+$(function() {
+    $("#btn9").click(function() {
+        $("#btn9").prependTo('#answerBox');
+    });
+});
+
+$(function() {
+    $("#btn10").click(function() {
+        $("#btn10").prependTo('#answerBox');
     });
 });
