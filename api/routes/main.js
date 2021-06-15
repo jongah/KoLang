@@ -3,12 +3,17 @@ var express = require('express');
 var router = express.Router();
 
 router.get('/', function (req, res) {
-    res.render('main', { user: req.user });
+    res.render('routermain', { user: req.user });
 });
 
 router.get('/dev', function (req, res) {
     res.render('Dev');
 });
+
+router.get('/search', function (req, res) {
+    res.render('Search');
+});
+
 
 router.get('/test', function (req, res) {
     console.log("/test")
