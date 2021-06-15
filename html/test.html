@@ -1,31 +1,96 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>단어 맞추기</title>
-        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-        <link rel="stylesheet" href="../css/wordQuizGame.css">
-        <script src="../js/quiz.js"></script>
-    </head>
+  <head>
+    <meta charset="UTF-8">
+    <style>
+      * {
+        margin: 0;
+      }
+      #topMenu {
+        width: 100%;
+        height: 150px;
+        display: flex;
+        text-align: center;
+      }
 
-    <body>
-        <div id="container">
-            <div id="sideBar"></div>
-            <div id="content">
-                <div id="answerBox" class="droppable"></div>
-                <div id="wordBox">
-                    
-                </div>
-            </div>
-        </div>
+      #topMenu button {
+        border: none;
+        outline: none;
+        color: white;
+      }
 
-        <!-- modal -->
-        <!-- <div class="black_bg"></div>
-        <div class="modal_wrap">
-            <div class="modal_close"><a href="#">close</a></div>
-            <div>
-                모달
-            </div>
-        <div> -->
-    </body>
+      #logo {
+        width: 300px;
+      }
+
+      #nav {
+        flex: 1;
+      }
+
+      #nav button {
+        width: 115px;
+        height: 50px;
+        margin: 100px 12px 0 12px;
+        border-radius: 25px;
+        font-size: 16pt;
+      }
+
+      #start {
+        background-color: #fa6b0b;
+      }
+
+      #my {
+        background-color: #faba0b;
+      }
+
+      #search {
+        background-color: #64c647;
+      }
+
+      #about {
+        background-color: #2f33af;
+      }
+
+      #dev {
+        background-color: #7e26b0;
+      }
+
+      #log {
+        width: 300px;
+      }
+
+      #log button {
+        width: 80px;
+        height: 35px;
+        margin: 100px 5px 0 5px;
+        border-radius: 20px;
+        font-size: 14pt;
+      }
+
+      #login {
+        background-color: #f5dd6a;
+      }
+
+      #logout {
+        background-color: #7ec5ef;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="topMenu">
+      <div id="logo"><img src="../Img/logo.png" style="height: 125px; margin-top: 25px;"></div>
+      <div id="nav">
+        <button id="start">START</button>
+        <button id="my">MY</button>
+        <button id="search">SEARCH</button>
+        <button id="about">ABOUT</button>
+        <button id="dev">DEV</button>
+      </div>
+      <div id="log">
+        <button id="login">login</button>
+        <button id="logout">logout</button>
+      </div>
+    </div>
+  </body>
 </html>

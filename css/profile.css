@@ -10,42 +10,74 @@ a:link, a:visited, a:hover, a:active{
                   font-family: "나눔바른고딕";
                   }
 
-#header{width: 100%;
-        height: 120px;
-        background-color: #F3F3F3;
-        }
-
-.logo{ overflow: hidden;
+#topMenu {
+       width: 100%;
+       height: 150px;
        display: flex;
-       align-items: center;
-       justify-content: center;
-       width: 200px;
-       height: 120px;
-       position: absolute;
-       margin: 20px 0 0 30px;
-      }
+       text-align: center;
+}
 
-.top-menu{ margin-left: 150px;
-          }
+#topMenu button {
+       border: none;
+       outline: none;
+       color: white;
+}
 
-.top-menu ul{ padding-top: 70px;
-              text-align: center;
-              }
+#logo {
+       width: 300px;
+}
 
-.top-menu ul li{ margin: 0 20px 0 20px;
-                }
+#nav {
+       flex: 1;
+}
 
-.login{ position: relative;
-        float: right;
-        margin-right: 40px;
-        margin-top: 70px;
-      }
+#nav button {
+       width: 100px;
+       height: 46px;
+       margin: 75px 12px 0 12px;
+       border-radius: 25px;
+       font-size: 12pt;
+}
 
-.m{ display: inline; 
-    border-radius: 30px;
-    padding: 10px 15px 10px 15px;
-    font-size: 18px;  
-    }
+#start {
+       background-color: #fa6b0b;
+}
+
+#my {
+       background-color: #faba0b;
+}
+
+#search {
+       background-color: #64c647;
+}
+
+#about {
+       background-color: #2f33af;
+}
+
+#dev {
+       background-color: #7e26b0;
+}
+
+#log {
+       width: 300px;
+}
+
+#log button {
+       width: 80px;
+       height: 35px;
+       margin: 75px 5px 0 5px;
+       border-radius: 20px;
+       font-size: 14pt;
+}
+
+#login {
+       background-color: #f5dd6a;
+}
+
+#logout {
+       background-color: #7ec5ef;
+}
           
 
 #orange{ background-color: #fa6b0b;

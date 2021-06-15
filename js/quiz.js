@@ -12,15 +12,19 @@ window.onload = function() {
     document.querySelector('.modal_close').addEventListener('click', offClick);              
 };
 
-$(function() {
-    $("#btn1").on("click", function() {
-        $("#btn1").prependTo('#answerBox');
-    });
-
-    $("#endBtn").on("click", function() {
-        $("#btn1").off();
-    });
-});
+function createDiv() {
+    // 1. <div> element 만들기
+    const newDiv = document.createElement('div');
+    
+    // 2. <div>에 들어갈 text node 만들기
+    const newText = document.createTextNode('TEST');
+    
+    // 3. <div>에 text node 붙이기
+    newDiv.appendChild(newText);
+    
+    // 4. <body>에 1에서 만든 <div> element 붙이기
+    document.getElementById('sideBar').appendChild(newDiv);
+} 
 
 $(function() {
     $("#btn2").click(function() {
