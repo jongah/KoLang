@@ -241,3 +241,63 @@ a:link, a:visited, a:hover, a:active{
 
 #btn5{background-color: #D293F6;}
 
+.modal{ width: 900px;
+        height: 600px;
+        left: 50%;
+        top: 50%;
+        margin: -300px 0 0 -450px;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        background-color: coral;
+        border-radius: 40px;
+      }
+
+.modal_title{ width: auto;
+              height: 30px;
+              background-color: cornflowerblue;
+              margin: 50px 0 0 30px;
+              font-size: 25px;
+              color: black;
+            }
+
+.main_area{ width: 600px;
+            height: 450px;
+            margin: 30px 0 0 30px;
+            background-color: #2F33AF;
+            border-radius: 30px;
+          }
+
+.submenu_area{ width: 200px;
+               height: 450px;
+               background-color: cadetblue;
+               position: absolute;
+               margin: 110px 0 0 660px;
+             }
+  
+.delete_btn{ width: 200px;
+             height: 70px;
+             background-color: #fa6b0b;
+             margin-top: 10px;
+             border: none;
+             border-radius: 15px;
+             color: #FFFFFF;
+             font-size: 18px;
+             text-align: left;
+             padding-left: 20px;
+            }
+
+.score_view{ width: 200px;
+             height: 150px;
+             margin-top: 30px;
+             background-color: #D293F6;
+             border-radius: 13px;
+           }
+
+.restart_view{ width: 200px;
+               height: 150px;
+               background-color: #FABA0B;
+               margin-top: 30px;
+               border-radius: 13px;
+               box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.2);
+             }
