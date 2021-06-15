@@ -8,7 +8,6 @@
     width: 100vw;
     height: 100vh;
     display: flex;
-    background-color: red;
 }
 
 #sideBar {
@@ -18,18 +17,33 @@
     background-color: white;
 }
 
+#endBtn {
+    width: 125px;
+    height: 55px;
+    margin-top: 75px;
+    background-color: #2f33af;
+    border-radius: 25px;
+    color: white;
+}
+
 #content {
     flex: 1;
     height: 100%;
+    background-color: #3b3b3b;
+}
+
+#playSector {
+    width: 100%;
+    height: 800px;
     display: flex;
     align-items: center;
-    background-color: yellowgreen;
 }
 
 #answerBox {
     width: 550px;
     height: 350px;
-    background-color: tomato;
+    background-color: white;
+    border-radius: 25px;
     text-align: center;
     margin: 0 auto;
 }
@@ -37,7 +51,7 @@
 #answerBox button {
     width: 110px;
     height: 45px;
-    margin: 30px 0 0 12.5px;
+    margin: 35px 10px 30px 10px;
 }
 
 #wordBox {
@@ -47,16 +61,31 @@
     margin: 0 auto;
 }
 
-#test1, #test2 {
-    display: flex;
-    width: 100%;
-    height: 75px;
-}
-
 #wordBox button {
     width: 110px;
     height: 45px;
     margin: 15px 0 0 12.5px;
+}
+
+#box {
+    width: 275px;
+    height: 100px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    background: #f5dd6a;
+}
+
+#box button {
+    width: 90px;
+    height: 45px;
+    margin: 0 10px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
 }
 
 /* modal */
@@ -138,11 +167,11 @@
     font-size: 16pt;
 }
 
-#true {
+#true, #next {
     background-color: #fa6b0b;
 }
 
-#wrong {
+#wrong, #skip {
     background-color: #64c647;
 }
 
