@@ -4,14 +4,19 @@
     font-family: "AppleSDGothicNeoUL00";
 }
 
-body {
+#container {
     text-align: center;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
 }
 
 #colorBox {
     width: 100%;
     height: 225px;
-    margin-top: 350px;
 }
 
 #colorBox button {
