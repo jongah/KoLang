@@ -9,7 +9,7 @@ window.onload = function() {
     }
                 
     document.getElementById('endBtn').addEventListener('click', onClick);
-    document.querySelector('.modal_close').addEventListener('click', offClick);              
+    document.querySelector('.black_bg').addEventListener('click', offClick);              
 };
 
 function knowWordCreate() {
