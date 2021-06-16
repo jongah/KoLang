@@ -273,22 +273,31 @@ a:link, a:visited, a:hover, a:active{
 
 #btn5{background-color: #D293F6;}
 
+/* modal */
+
+.modal_bg{ display: none;
+           position: absolute;
+           content: "";
+           width: 100%;
+           height: 100%;
+           background-color:rgba(0, 0,0, 0.5);
+         }
+
 .modal{ width: 900px;
         height: 600px;
         left: 50%;
         top: 50%;
         margin: -300px 0 0 -450px;
         position: absolute;
-        display: flex;
+        display: none;
         flex-direction: column;
-        background-color: coral;
+        background-color: #FFFFFF;
         border-radius: 40px;
       }
 
 .modal_title{ width: auto;
               height: 30px;
-              background-color: cornflowerblue;
-              margin: 50px 0 0 30px;
+              margin: 50px 0 0 40px;
               font-size: 25px;
               color: black;
             }
@@ -300,9 +309,30 @@ a:link, a:visited, a:hover, a:active{
             border-radius: 30px;
           }
 
+.text_view{ overflow: auto;
+            width: 550px;
+            height: 400px;
+            margin: 25px 0 0 25px;
+            background-color: #2F33AF;
+            color: #FFFFFF;
+            font-size: 18px;
+            resize: none;
+            border: none;
+            outline: none;
+          }
+  
+.text_view::-webkit-scrollbar { width: 15px;
+                                background-color: #A0A2D3;
+                              }
+  
+.text_view::-webkit-scrollbar-thumb { height: 50px;
+                                      background-color: #FFFFFF;
+                                    }
+
+
 .submenu_area{ width: 200px;
                height: 450px;
-               background-color: cadetblue;
+               
                position: absolute;
                margin: 110px 0 0 660px;
              }
@@ -310,26 +340,80 @@ a:link, a:visited, a:hover, a:active{
 .delete_btn{ width: 200px;
              height: 70px;
              background-color: #fa6b0b;
-             margin-top: 10px;
              border: none;
              border-radius: 15px;
              color: #FFFFFF;
              font-size: 18px;
              text-align: left;
              padding-left: 20px;
+             box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.2);
             }
 
 .score_view{ width: 200px;
              height: 150px;
-             margin-top: 30px;
+             margin: 40px 0 40px 0;
              background-color: #D293F6;
              border-radius: 13px;
+             color: #FFFFFF;
            }
+
+#md_word{ width: 200px;
+          height: 75px;
+        }
+
+#mdwName{ width: 200px;
+          height: auto;
+          position: absolute;
+          margin: 25px 0 0 10px ;
+          font-size: 20px;
+        }
+
+#mdwScore{ width: auto;
+           height: auto;
+           position: absolute;
+           margin: 20px 0 0 120px;
+           font-size: 28px;
+         }
+
+#md_sentence{ width: 200px;
+              height: 75px;
+            }
+
+#mdsName{ width: 200px;
+          height: auto;
+          position: absolute;
+          margin: 25px 0 0 10px ;
+          font-size: 20px;
+        }
+    
+#mdsScore{ width: auto;
+           height: auto;
+           position: absolute;
+           margin: 20px 0 0 120px;
+           font-size: 28px;
+          }
 
 .restart_view{ width: 200px;
                height: 150px;
                background-color: #FABA0B;
-               margin-top: 30px;
-               border-radius: 13px;
-               box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.2);
+               border-radius: 20px;
+               font-size: 24px;
+               color: #FFFFFF;
              }
+  
+.restart_btn{ width: 20px;
+              height: 20px;
+              border: none;
+            }
+
+.submit_restart{ width: 80px;
+                 height: 30px;
+                 font-size: 18px;
+                 margin: 30px 0 0 60px;
+                 color: #FFFFFF;
+                 border: none;
+                 border-radius: 20px;
+                 box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.2);
+               }
+  
+
