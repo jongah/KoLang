@@ -11,10 +11,11 @@
 }
 
 #sideBar {
-    flex-basis: 275px;
+    width: 250px;
     height: 100%;
     text-align: center;
     background-color: white;
+    overflow: auto;
 }
 
 #endBtn {
