@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="../css/profile.css">
+    <script src="../js/profile.js"></script>
     <title>kolang</title>
   </head>
   <body>
@@ -86,16 +87,70 @@
     </div> <!-- end of wrap -->
 
     <!-- modal -->
+    <div class="modal_bg"></div>
     <div id="close_btn">X</div> <!-- 나가는 버튼 -->
     <div class="modal">
       <div class="modal_title">별 헤는 밤</div> <!-- 글 제목 -->
       <div class="main_area"> <!-- 글 본문이 보일 view -->
-        <div class="text_view"></div>
+        <textarea readonly class="text_view">
+          
+빠르게 흘러가
+내 맘에 빈틈이 없게
+어둠이 찾아와
+또 다시 비틀거리게
+
+우리 함께 였었던 같은 시간에 살던
+Where u at, where u at
+
+어쩌면 나 바랬던 건지도 몰라
+이제는 I wanna tra-la
+원하는 대로 다 try ya
+뒤 돌아봐 잊어왔던 모든것
+내 맘속에 담을래
+
+한걸음 가까이 걸어가면 우릴
+그 곳으로 데려다줘
+믿을 수 없이 찬란해져 가는
+저기 저 별을 따라서
+
+너와 나 tra-la
+춤을춰 tra-la
+쏟아지는 별빛아래
+지금이 starlight 눈부신 spotlight
+이젠 두렵지 않아 저 하늘위로 던질거야
+
+저 하늘 위로 던질거야
+저 하늘 위로 던질거야
+
+        </textarea>
       </div>
-      <div class="submenu_area"> <!-- 서브 메뉴를 감싸는 area -->
+
+      <!-- 서브 메뉴를 감싸는 area -->
+      <div class="submenu_area">
         <button class="delete_btn">DELETE</button>
-        <div class="score_view"></div>
-        <div class="restart_view"></div>
+        <div class="score_view">
+          <div id="md_word">  <!-- word -->
+            <p id="mdwName">word</p>
+            <p id="mdwScore">80.46</p>
+          </div>
+          <div id="md_sentence">  <!-- sentence -->
+            <p id="mdsName">sentence</p>
+            <p id="mdsScore">99.95</p>
+          </div>
+        </div>
+
+        <!-- restart -->
+        <div class="restart_view">
+          <div class="btn_box ">
+            <label class="mdlabel">word</label>
+            <input type="radio" class="restart_wordbtn restart_btn" name="mdSelect" >
+          </div>
+          <div class="btn_box ">
+            <label class="mdlabel">sentence</label>
+            <input type="radio" class="restart_sentencebtn restart_btn" name="mdSelect">
+          </div>
+          <input type="submit" id="green" class="submit_restart" value="start">
+        </div>
       </div>
     </div>
   </body>
