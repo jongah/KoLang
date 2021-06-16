@@ -36,7 +36,7 @@ function unknowWordCreate() {
     
     // 3. <div>에 text node 붙이기
     newDiv.appendChild(newText);
-    newDiv.style.background="#64c647";
+    newDiv.style.background="#fa6b0b";
 
     // 4. <body>에 1에서 만든 <div> element 붙이기
     document.getElementById('sideBar').appendChild(newDiv);
