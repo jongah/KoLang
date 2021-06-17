@@ -9,6 +9,7 @@
     <title>kolang</title>
   </head>
   <body>
+    <div id="modal_bg"></div>
     <div id="wrap">
       <div id="topMenu">
         <div id="logo"><img src="../Img/logo.png" style="height: 125px; margin-top: 25px; float: right;"></div>
@@ -65,23 +66,23 @@
         <div id="total_score">
           <div id="orange" class="score_box box1">
             <p class="ck_score">99.88</p>
-            <button id="btn1" class="check_scorebtn">토끼와 거북이</button>
+            <button id="btn1" class="check_scorebtn check_btn">토끼와 거북이</button>
           </div>
           <div id="yellow" class="score_box box2">
             <p class="ck_score">99.88</p>
-            <button id="btn2" class="check_scorebtn">토끼와 거북이</button>
+            <button id="btn2" class="check_scorebtn check_btn">토끼와 거북이</button>
           </div>
           <div id="green" class="score_box box3">
             <p class="ck_score">99.88</p>
-            <button id="btn3" class="check_scorebtn">토끼와 거북이</button>
+            <button id="btn3" class="check_scorebtn check_btn">토끼와 거북이</button>
           </div>
           <div id="blue" class="score_box box4">
             <p class="ck_score">99.88</p>
-            <button id="btn4" class="check_scorebtn">토끼와 거북이</button>
+            <button id="btn4" class="check_scorebtn check_btn">토끼와 거북이</button>
           </div>
           <div id="purple" class="score_box box5">
             <p class="ck_score">99.88</p>
-            <button id="btn5" class="check_scorebtn">토끼와 거북이</button>
+            <button id="btn5" class="check_scorebtn check_btn">토끼와 거북이</button>
           </div>
         </div>
       </div> <!-- end of main_body -->
@@ -89,9 +90,8 @@
     </div> <!-- end of wrap -->
 
     <!-- modal -->
-    <div class="modal_bg"></div>
-    <div id="close_btn">X</div> <!-- 나가는 버튼 -->
-    <div class="modal">
+    <div id="modal" class="modal_area">
+      <div id="close_btn">X</div> <!-- 나가는 버튼 -->
       <div class="modal_title">별 헤는 밤</div> <!-- 글 제목 -->
       <div class="main_area"> <!-- 글 본문이 보일 view -->
         <textarea readonly class="text_view">

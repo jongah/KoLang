@@ -71,32 +71,20 @@ a:link, a:visited, a:hover, a:active{
        font-size: 14pt;
 }
 
-#login {
-       background-color: #f5dd6a;
-}
+#login { background-color: #f5dd6a;}
 
-#logout {
-       background-color: #7ec5ef;
-}
+#logout { background-color: #7ec5ef;}
           
 
-#orange{ background-color: #fa6b0b;
-      }
+#orange{ background-color: #fa6b0b;}
         
-#yellow{ background-color: #FABA0B;
-        }
+#yellow{ background-color: #FABA0B;}
 
-#green{ background-color: #64c647;
-      }
+#green{ background-color: #64c647;}
 
-#blue{ background-color: #2F33AF;
-      }
+#blue{ background-color: #2F33AF;}
 
-#purple{ background-color: #7E26B0;
-        }
-
-#mypage{ background-color: #A3E98E;
-        }
+#purple{ background-color: #7E26B0;}
 
 #profile{ width: 1200px;
           height: 290px;
@@ -108,7 +96,7 @@ a:link, a:visited, a:hover, a:active{
               height: 250px;
               background-color: #f5dd6a;
               margin: auto;
-              margin-top: 30px;
+              margin-top: 20px;
               border-radius: 10px;
               box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.2);
             }
@@ -275,15 +263,15 @@ a:link, a:visited, a:hover, a:active{
 
 /* modal */
 
-.modal_bg{ display: none;
-           position: absolute;
-           content: "";
-           width: 100%;
+#modal_bg{ width: 100%;
            height: 100%;
-           background-color:rgba(0, 0,0, 0.5);
+           display: none;
+           position: absolute;
+           background-color:rgba(0, 0, 0, 0.5);
+           z-index: 1;
          }
 
-.modal{ width: 900px;
+#modal{ width: 900px;
         height: 600px;
         left: 50%;
         top: 50%;
@@ -293,6 +281,7 @@ a:link, a:visited, a:hover, a:active{
         flex-direction: column;
         background-color: #FFFFFF;
         border-radius: 40px;
+        z-index: 2;
       }
 
 .modal_title{ width: auto;
