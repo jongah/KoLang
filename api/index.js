@@ -11,6 +11,7 @@ const app = express()
 const port = 4000;
 const path = require("path");
 
+//
 mongoose.connect(process.env.DB_PATH, {
   useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true, useFindAndModify: false
 }).then(() => console.log('MongoDB Connected...')).catch(err => console.log(err))
@@ -40,6 +41,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', require('./routes/main'));
 app.use('/auth', require('./routes/auth'));
 
+//dbtest
 app.post('/api/register', (req, res) => {
   //클라이언트에서 보내주는 정보들을 가져온뒤 DB에 넣기
   const user = new User(req.body)
