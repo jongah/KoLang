@@ -1,3 +1,46 @@
+let sentence = "프랑시스 속의 계절이 소녀들의 까닭입니다.";
+let newSentence = sentence.replace(/\-/g,'');
+
+let word = newSentence.split(' ');
+
+// side menu
+function knowWordCreate() {
+    const newDiv = document.createElement('div');
+    const newText = document.createTextNode('next');
+    newDiv.appendChild(newText);
+
+    let reSentence = word.join(" ");
+    console.log(reSentence);
+
+    if(newSentence == reSentence) {
+        newDiv.style.background="#64c647";
+        console.log('o');
+    }else {
+        newDiv.style.background="#fa6b0b";
+        console.log('x');
+    }
+
+    document.getElementById('sideBar').appendChild(newDiv);
+}
+
+function unknowWordCreate() {
+    const newDiv = document.createElement('div');
+    const newText = document.createTextNode('skip');
+    newDiv.appendChild(newText);
+    newDiv.style.background="#fa6b0b";
+    document.getElementById('sideBar').appendChild(newDiv);
+}
+
+// create quiz button
+window.onload = function quizTest() {
+    for(i = 0; i < word.length; i++) {
+        let create = document.createElement('button');
+        create.innerHTML = word[i];
+        document.getElementById('wordBox').appendChild(create);
+    }
+}
+
+// modal
 window.onload = function() {
     function onClick() {
         document.querySelector('.modal_wrap').style.display ='block';
@@ -11,33 +54,3 @@ window.onload = function() {
     document.getElementById('endBtn').addEventListener('click', onClick);
     document.querySelector('.black_bg').addEventListener('click', offClick);              
 };
-
-function knowWordCreate() {
-    // 1. <div> element 만들기
-    const newDiv = document.createElement('div');
-    
-    // 2. <div>에 들어갈 text node 만들기
-    const newText = document.createTextNode('next');
-    
-    // 3. <div>에 text node 붙이기
-    newDiv.appendChild(newText);
-    newDiv.style.background="#fa6b0b";
-
-    // 4. <body>에 1에서 만든 <div> element 붙이기
-    document.getElementById('sideBar').appendChild(newDiv);
-}
-
-function unknowWordCreate() {
-    // 1. <div> element 만들기
-    const newDiv = document.createElement('div');
-    
-    // 2. <div>에 들어갈 text node 만들기
-    const newText = document.createTextNode('skip');
-    
-    // 3. <div>에 text node 붙이기
-    newDiv.appendChild(newText);
-    newDiv.style.background="#fa6b0b";
-
-    // 4. <body>에 1에서 만든 <div> element 붙이기
-    document.getElementById('sideBar').appendChild(newDiv);
-}
