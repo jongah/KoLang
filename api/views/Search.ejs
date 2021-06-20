@@ -5,7 +5,7 @@
   <title>Search</title>
 
   <link rel="stylesheet" href="../css/Search.css" type="text/css">
-  <script></script>
+
   </head>
   <body>
     <div id="wrap">
@@ -26,10 +26,25 @@
 
       <div class="search_box">
         <div class="search_cover">
-          <input type="text" class="search_word" placeholder="Please enter a search term :)">
-          <input type="submit" class="search_btn" value="Search">
+          <input type="text" class="search_word" placeholder="Please enter a search term :)" name="search_word">
+          <input type="submit" class="search_btn" value="Search" onclick="">
         </div>
       </div>
     </div>
+
+    <script>
+
+      let btn = document.querySelector('.search_btn');
+      btn.addEventListener('click',click);
+      function click(){
+        let search_word = document.querySelector('.search_word');
+        // console.log(search_word.value);
+        var url = 'https://krdict.korean.go.kr/eng/dicSearch/search?nation=eng&nationCode=6&ParaWordNo=&mainSearchWord=' + search_word.value;
+        // console.log(url);
+        window.open(url);
+        
+      }
+
+    </script>
   </body>
  </html> 
