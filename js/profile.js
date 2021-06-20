@@ -11,13 +11,18 @@ window.onload = function(){
     });
   }
 
-  // 모달창 이외의 영역을 클릭 시 종료
-  modal.addEventListener("click", e => {
-    const evTarget = e.target
-    if(evTarget.classList.contains("modal_area")) {
-        modal.style.display = "none"
+  // X창 클릭시 모달창 close
+  const closeBtn = modal.querySelector(".close_btn")
+  closeBtn.addEventListener("click", e => {
+    modal.style.display = "none";
+    modal_bg.style.display = "none";
+  });
+
+  window.addEventListener("keyup", e => {
+    if(modal.style.display === "flex" && e.key === "Escape") {
+        modal.style.display = "none";
         modal_bg.style.display = "none";
     }
-})
+  });
 
 };
