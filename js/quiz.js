@@ -14,7 +14,7 @@ window.onload = function() {
 };
 
 let sentence = "프랑시스 속의 계절이 소녀들의 까닭입니다.";
-let newSentence = sentence.replace(".","");
+let newSentence = sentence.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi,"");
 
 let word = newSentence.split(' ');
 
@@ -46,11 +46,15 @@ function unknowWordCreate() {
     document.getElementById('sideBar').appendChild(newDiv);
 }
 
+
 // create quiz button
 window.onload = function quizTest() {
     for(i = 0; i < word.length; i++) {
         let create = document.createElement('button');
         create.innerHTML = word[i];
         document.getElementById('wordBox').appendChild(create);
+        create.addEventListener('click', function onclick() {
+            document.getElementById('answerBox').appendChild(create);
+        });
     }
 }
