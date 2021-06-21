@@ -45,17 +45,26 @@ window.onload = function() {
                 
     document.getElementById('endBtn').addEventListener('click', onClick);
     document.querySelector('.black_bg').addEventListener('click', offClick);
-
+    let s ="";
     // create
     for(i = 0; i < word.length; i++) {
+        let test = new Array(word.length);
         let create = document.createElement('button');
         create.innerHTML = word[i];
         document.getElementById('wordBox').appendChild(create);
 
+        
+
         create.addEventListener('click', function onclick() {
             if(create.parentNode.id == 'wordBox') {
                 document.getElementById('answerBox').appendChild(create);
+                test[i] = create.textContent;
+                s += test[i] + " ㄴㅅㄱ";
+                console.log(s);
+                
             }else if(create.parentNode.id == 'answerBox') {
+                s -= test[i];
+                console.log(s);
                 document.getElementById('wordBox').appendChild(create);
             }else {
                 console.log('어딘가 오류 발생 ㅜㅜ');
