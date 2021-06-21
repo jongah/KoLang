@@ -37,20 +37,40 @@
         background-color: #fa6b0b;
 }
 
+#start:hover {
+        background-color: #f3ab95;        ;
+}
+
 #my {
         background-color: #faba0b;
+}
+
+#my:hover {
+        background-color: #f5dd6a;
 }
 
 #search {
         background-color: #64c647;
 }
 
+#search:hover {
+        background-color: #a3e98e;
+}
+
 #about {
         background-color: #2f33af;
 }
 
+#about:hover {
+        background-color: #7ec5ef;
+}
+
 #dev {
         background-color: #7e26b0;
+}
+
+#dev:hover {
+        background-color: #d293f6;
 }
 
 #log {
@@ -69,8 +89,16 @@
         background-color: #f5dd6a;
 }
 
+#login:hover {
+        background-color: #faba0b;
+}
+
 #logout {
         background-color: #7ec5ef;
+}
+
+#logout:hover {
+        background-color: #2f33af;
 }
 
 #main_page {
@@ -102,3 +130,7 @@
         color: white;
         border: none;
       }
+
+.start:hover {
+        background-color: #7ec5ef;
+}
