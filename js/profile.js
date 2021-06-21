@@ -11,3 +11,7 @@ window.onload = function() {
   document.getElementById('.check_scorebtn').addEventListener('click', onClick);
   document.querySelector('.close_btn').addEventListener('click', offClick);              
 };
+
+function changeImg() {
+  let imgInput = document.getElementById('profileImg');
+}
