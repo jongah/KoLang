@@ -88,7 +88,6 @@ a:link, a:visited, a:hover, a:active{
 
 #profile{ width: 1200px;
           height: 290px;
-          /* background-color: aquamarine; */
           margin: auto;
         }
 
@@ -96,7 +95,7 @@ a:link, a:visited, a:hover, a:active{
               height: 250px;
               background-color: #f5dd6a;
               margin: auto;
-              margin-top: 20px;
+              margin-top: 40px;
               border-radius: 10px;
               box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.2);
             }
@@ -191,7 +190,7 @@ a:link, a:visited, a:hover, a:active{
 #select_button{ width: 1200px;
                 height: 60px;
                 margin: auto;
-                /* background-color: khaki; */
+                margin-top: 20px;
                 text-align: center;
               }
 
@@ -220,7 +219,7 @@ a:link, a:visited, a:hover, a:active{
               height: 200px;
               /* background-color: aqua; */
               margin: auto;
-              margin-top: 20px;
+              margin-top: 30px;
               text-align: center;
             }
 
@@ -321,6 +320,7 @@ a:link, a:visited, a:hover, a:active{
             resize: none;
             border: none;
             outline: none;
+            font-family: '나눔바른고딕';
           }
   
 .text_view::-webkit-scrollbar { width: 15px;

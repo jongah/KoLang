@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <title>Search</title>
+
+  <link rel="stylesheet" href="../css/Search.css" type="text/css">
+
+  </head>
+  <body>
+    <div id="wrap">
+      <div id="topMenu">
+        <div id="logo"><img src="../Img/logo.png" style="height: 125px; margin-top: 25px; float: right;"></div>
+        <div id="nav">
+          <button id="start">START</button>
+          <button id="my">MY</button>
+          <a href="Search.html"><button id="search">SEARCH</button></a>
+          <a href="About.html"><button id="about">ABOUT</button></a>
+          <a href="Dev.html"><button id="dev">DEV</button></a>
+        </div>
+        <div id="log">
+          <a href="loginPage.html"><button id="login">login</button></a>
+          <button id="logout">logout</button>
+        </div>
+      </div>
+
+      <div class="search_box">
+        <div class="search_cover">
+          <input type="text" class="search_word" placeholder="Please enter a search term :)" name="search_word">
+          <input type="submit" class="search_btn" value="ENG">
+        </div>
+        <div class="languages">
+          <input type="submit" class="russ_search searchBtn" value="RUS">
+          <input type="submit" class="french_search searchBtn" value="FRA">
+          <input type="submit" class="japanese_search searchBtn" value="JPN">
+          <input type="submit" class="thai_search searchBtn" value="THA">
+          <input type="submit" class="vietnamese_search searchBtn" value="VIE">
+        </div>
+      </div>
+    </div>
+
+    <script>
+
+      let btn = document.querySelector('.search_btn');
+      btn.addEventListener('click',click);
+      function click(){
+        let search_word = document.querySelector('.search_word');
+        // console.log(search_word.value);
+        var url = 'https://krdict.korean.go.kr/eng/dicSearch/search?nation=eng&nationCode=6&ParaWordNo=&mainSearchWord=' + search_word.value;
+        // console.log(url);
+        window.open(url);
+        
+      }
+
+    </script>
+  </body>
+ </html> 
