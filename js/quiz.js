@@ -1,3 +1,4 @@
+// 문단을 담을 변수 : let paragraph = "";
 let sentence = "프랑시스 속의 계절이 소녀들의 까닭입니다.";
 let newSentence = sentence.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi,"");
 
@@ -31,9 +32,8 @@ function unknowWordCreate() {
     document.getElementById('sideBar').appendChild(newDiv);
 }
 
-
-// create quiz button
 window.onload = function() {
+    // modal
     function onClick() {
         document.querySelector('.modal_wrap').style.display ='block';
         document.querySelector('.black_bg').style.display ='block';
@@ -45,13 +45,30 @@ window.onload = function() {
                 
     document.getElementById('endBtn').addEventListener('click', onClick);
     document.querySelector('.black_bg').addEventListener('click', offClick);
-
+    let s ="";
+    // create
     for(i = 0; i < word.length; i++) {
+        let test = new Array(word.length);
         let create = document.createElement('button');
         create.innerHTML = word[i];
         document.getElementById('wordBox').appendChild(create);
+
+        
+
         create.addEventListener('click', function onclick() {
-            document.getElementById('answerBox').appendChild(create);
+            if(create.parentNode.id == 'wordBox') {
+                document.getElementById('answerBox').appendChild(create);
+                test[i] = create.textContent;
+                s += test[i] + " ㄴㅅㄱ";
+                console.log(s);
+                
+            }else if(create.parentNode.id == 'answerBox') {
+                s -= test[i];
+                console.log(s);
+                document.getElementById('wordBox').appendChild(create);
+            }else {
+                console.log('어딘가 오류 발생 ㅜㅜ');
+            }
         });
     }
 }
