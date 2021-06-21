@@ -5,7 +5,6 @@
   <title>Search</title>
 
   <link rel="stylesheet" href="../css/Search.css" type="text/css">
-  <script src="../js/Search.js"></script>
 
   </head>
   <body>
@@ -28,27 +27,21 @@
       <div class="search_box">
         <div class="search_cover">
           <input type="text" class="search_word" placeholder="Please enter a search term :)" name="search_word">
-          <input type="submit" class="search_btn" value="ENG">
+          <input type="submit" class="search_btn" value="Search" onclick="">
         </div>
-        <div class="languages">
-          <input type="submit" class="russ_search searchBtn" value="RUSSIAN">
-          <input type="submit" class="french_search searchBtn" value="FRENCH">
-          <input type="submit" class="japanese_search searchBtn" value="JAPANESE">
-          <input type="submit" class="thai_search searchBtn" value="THAI">
-          <input type="submit" class="vietnamese_search searchBtn" value="VIETNAMESE">
-        </div>
-      </div>
-
-      <div class="bottomMenu">
-        <button class="NationalInstituteKor"><img src="../Img/kor.jpg" width="130px" height="40px"></button>
-        <button class="NationalInstituteEng"><img src="../Img/eng.jpg" width="170px" height="40px"></button> <br>
-        <label class="notice">It is a dictionary of the National Institute of Korean Language.</label>
       </div>
     </div>
 
     <script>
-
-      
+      let btn = document.querySelector('.search_btn');
+      btn.addEventListener('click',click);
+      function click(){
+        let search_word = document.querySelector('.search_word');
+        // console.log(search_word.value);
+        var url = 'https://krdict.korean.go.kr/eng/dicSearch/search?nation=eng&nationCode=6&ParaWordNo=&mainSearchWord=' + search_word.value;
+        // console.log(url);
+        window.open(url);
+      }
     </script>
   </body>
  </html> 

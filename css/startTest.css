@@ -65,10 +65,12 @@ a:link, a:visited, a:hover, a:active{ color: #FFFFFF;
         resize: none;
         border: none;
         overflow: hidden;
+        font-family: '나눔바른고딕';
+        font-weight: lighter;
       }
 
-.title::placeholder{ color: rgb(236, 236, 236);
-                     font-style: italic;
+.title::placeholder{ color: rgb(236, 236, 236); 
+                     font-weight: lighter;
                    }
 
 .writing_in{ width: 700px;
@@ -87,10 +89,12 @@ a:link, a:visited, a:hover, a:active{ color: #FFFFFF;
              color: #FFFFFF;
              resize: none;
              border: none;
+             font-family: '나눔바른고딕';
+             font-weight: lighter;
             }
 
-.text_area::placeholder{ color: rgb(236, 236, 236);
-                         font-style: italic;
+.text_area::placeholder{ color: rgb(236, 236, 236); 
+                         font-weight: lighter;
                        }
 
 .text_area::-webkit-scrollbar { width: 15px;

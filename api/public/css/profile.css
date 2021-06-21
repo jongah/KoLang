@@ -88,6 +88,7 @@ a:link, a:visited, a:hover, a:active{
 
 #profile{ width: 1200px;
           height: 290px;
+          /* background-color: aquamarine; */
           margin: auto;
         }
 
@@ -95,7 +96,7 @@ a:link, a:visited, a:hover, a:active{
               height: 250px;
               background-color: #f5dd6a;
               margin: auto;
-              margin-top: 40px;
+              margin-top: 20px;
               border-radius: 10px;
               box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.2);
             }
@@ -190,7 +191,7 @@ a:link, a:visited, a:hover, a:active{
 #select_button{ width: 1200px;
                 height: 60px;
                 margin: auto;
-                margin-top: 20px;
+                /* background-color: khaki; */
                 text-align: center;
               }
 
@@ -219,8 +220,7 @@ a:link, a:visited, a:hover, a:active{
               height: 200px;
               /* background-color: aqua; */
               margin: auto;
-              margin-top: 30px;
-              margin-bottom: 30px;
+              margin-top: 20px;
               text-align: center;
             }
 
@@ -291,7 +291,7 @@ a:link, a:visited, a:hover, a:active{
             font-weight: bold;
             text-align: center;
             border-radius: 13px;
-            margin: 20px 0 0 840px;
+            margin: 0 0 0 910px;
             position: absolute;
             font-size: large;
             padding-top: 5px;
@@ -321,7 +321,6 @@ a:link, a:visited, a:hover, a:active{
             resize: none;
             border: none;
             outline: none;
-            font-family: '나눔바른고딕';
           }
   
 .text_view::-webkit-scrollbar { width: 15px;
