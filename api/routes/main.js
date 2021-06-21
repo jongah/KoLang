@@ -17,6 +17,9 @@ router.get('/my', function (req, res) {
 router.get('/dev', function (req, res) {
     res.render('Dev');
 });
+router.get('/profile', function (req, res) {
+    res.render('profile');
+});
 
 router.get('/search', function (req, res) {
     res.render('Search');
