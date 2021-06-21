@@ -65,6 +65,7 @@ a:link, a:visited, a:hover, a:active{ color: #FFFFFF;
         resize: none;
         border: none;
         overflow: hidden;
+        font-family: '나눔바른고딕';
       }
 
 .title::placeholder{ color: rgb(236, 236, 236);
@@ -87,6 +88,7 @@ a:link, a:visited, a:hover, a:active{ color: #FFFFFF;
              color: #FFFFFF;
              resize: none;
              border: none;
+             font-family: '나눔바른고딕';
             }
 
 .text_area::placeholder{ color: rgb(236, 236, 236);

@@ -6,6 +6,14 @@ router.get('/', function (req, res) {
     res.render('main', { user: req.user });
 });
 
+router.get('/start', function (req, res) {
+    res.render('Start');
+});
+
+router.get('/my', function (req, res) {
+    res.render('My');
+});
+
 router.get('/dev', function (req, res) {
     res.render('Dev');
 });
