@@ -115,7 +115,7 @@
 
 .searchBtn{ width: 90px;
             height: 40px;
-            font-size: 18px;
+            font-size: 13px;
             border: none;
             border-radius: 30px;
             color: #FFFFFF;
@@ -132,4 +132,24 @@
 
 .vietnamese_search{background-color: #d293f6;}
 
+.bottomMenu{ width: 100%;
+             height: 100px;
+             position: fixed;
+             bottom: 0;
+             text-align: center;
+             color: #000000;
+             
+           }
+
+.NationalInstituteKor{ width: 130px;
+                       height: 40px;
+                       border: none;
+                       border-radius: 15px;
+                     }
+
+.NationalInstituteEng{ width: 170px;
+                       height: 40px;
+                       border: none;
+                       border-radius: 15px;
+                     }
 

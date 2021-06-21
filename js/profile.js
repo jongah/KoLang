@@ -2,10 +2,18 @@ window.onload = function(){
   const modal = document.getElementById("modal");
   const modal_bg = document.getElementById("modal_bg");
   const btnModals = document.getElementsByClassName("check_btn");
+  const divModals = document.getElementsByClassName("score_box");
 
   // 모달창 띄우기
   for(var i = 0; i<btnModals.length; i++){
     btnModals[i].addEventListener("click", e => {
+      modal.style.display = "flex";
+      modal_bg.style.display = "block";
+    });
+  }
+
+  for(var i = 0; i<divModals.length; i++){
+    divModals[i].addEventListener("click", e => {
       modal.style.display = "flex";
       modal_bg.style.display = "block";
     });
