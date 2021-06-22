@@ -34,7 +34,7 @@ window.onload = function() {
     }
 
     document.getElementById('endBtn').addEventListener('click', onClick);
-    document.querySelector('.black_bg').addEventListener('click', offClick);
+    document.querySelector('.modal_wrap').addEventListener('click', offClick);
     // end modal
 
     // 여기서부터 게임 로직
