@@ -5,12 +5,53 @@ let newSentence = sentence.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi
 let word = newSentence.split(' ');
 
 // side menu
+let answer = new Array();
+
+window.onload = function() {
+    // modal
+    function onClick() {
+        document.querySelector('.modal_wrap').style.display ='block';
+        document.querySelector('.black_bg').style.display ='block';
+    }   
+    function offClick() {
+        document.querySelector('.modal_wrap').style.display ='none';
+        document.querySelector('.black_bg').style.display ='none';
+    }
+                
+    document.getElementById('endBtn').addEventListener('click', onClick);
+    document.querySelector('.black_bg').addEventListener('click', offClick);
+    let s ="";
+    // create
+    for(i = 0; i < word.length; i++) {
+        let create = document.createElement('button');
+        create.innerHTML = word[i];
+        document.getElementById('wordBox').appendChild(create);
+
+        create.addEventListener('click', function onclick() {
+            if(create.parentNode.id == 'wordBox') {
+                document.getElementById('answerBox').appendChild(create);
+                answer = answer.concat(create.textContent);
+                //test += create.textContent);
+                //s += create.textContent + " ";
+                //console.log(answer.join(" "));
+            }else if(create.parentNode.id == 'answerBox') {
+                //test = test.splice(word.indexOf(create.textContent));
+                answer.splice(answer.indexOf(create.textContent), 1);
+                console.log(answer);
+                document.getElementById('wordBox').appendChild(create);
+            }else {
+                console.log('어딘가 오류 발생 ㅜㅜ');
+            }
+        });
+    }
+}
+
 function knowWordCreate() {
     const newDiv = document.createElement('div');
     const newText = document.createTextNode('next');
     newDiv.appendChild(newText);
 
-    let reSentence = word.join(" ");
+    let reSentence = answer.join(" ");
     console.log(reSentence);
 
     if(newSentence == reSentence) {
@@ -30,43 +71,4 @@ function unknowWordCreate() {
     newDiv.appendChild(newText);
     newDiv.style.background="#fa6b0b";
     document.getElementById('sideBar').appendChild(newDiv);
-}
-
-window.onload = function() {
-    // modal
-    function onClick() {
-        document.querySelector('.modal_wrap').style.display ='block';
-        document.querySelector('.black_bg').style.display ='block';
-    }   
-    function offClick() {
-        document.querySelector('.modal_wrap').style.display ='none';
-        document.querySelector('.black_bg').style.display ='none';
-    }
-                
-    document.getElementById('endBtn').addEventListener('click', onClick);
-    document.querySelector('.black_bg').addEventListener('click', offClick);
-    let s ="";
-    // create
-    for(i = 0; i < word.length; i++) {
-        let test = new Array(word.length);
-        let create = document.createElement('button');
-        create.innerHTML = word[i];
-        document.getElementById('wordBox').appendChild(create);
-
-        create.addEventListener('click', function onclick() {
-            if(create.parentNode.id == 'wordBox') {
-                document.getElementById('answerBox').appendChild(create);
-                test[i] = create.textContent;
-                s += test[i] + " ";
-                console.log(s);
-                
-            }else if(create.parentNode.id == 'answerBox') {
-                s -= test[i];
-                console.log(s);
-                document.getElementById('wordBox').appendChild(create);
-            }else {
-                console.log('어딘가 오류 발생 ㅜㅜ');
-            }
-        });
-    }
 }
