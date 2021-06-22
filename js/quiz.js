@@ -20,7 +20,7 @@ window.onload = function() {
                 
     document.getElementById('endBtn').addEventListener('click', onClick);
     document.querySelector('.black_bg').addEventListener('click', offClick);
-    let s ="";
+
     // create
     for(i = 0; i < word.length; i++) {
         let create = document.createElement('button');
@@ -31,11 +31,8 @@ window.onload = function() {
             if(create.parentNode.id == 'wordBox') {
                 document.getElementById('answerBox').appendChild(create);
                 answer = answer.concat(create.textContent);
-                //test += create.textContent);
-                //s += create.textContent + " ";
-                //console.log(answer.join(" "));
+
             }else if(create.parentNode.id == 'answerBox') {
-                //test = test.splice(word.indexOf(create.textContent));
                 answer.splice(answer.indexOf(create.textContent), 1);
                 console.log(answer);
                 document.getElementById('wordBox').appendChild(create);
