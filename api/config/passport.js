@@ -46,7 +46,9 @@ passport.use(new GoogleStrategy(
         //=========
         const user = new User({
           "id": profile.sub,
-          "u_name": profile.displayName,
+          "u_name": profile.given_name,
+          "provider": profile.provider,
+          "language":profile.language
         })
         //user 모델에 저장
         user.save((err, userInfo) => {
