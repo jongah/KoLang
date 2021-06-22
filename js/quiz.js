@@ -53,13 +53,11 @@ window.onload = function() {
         create.innerHTML = word[i];
         document.getElementById('wordBox').appendChild(create);
 
-        
-
         create.addEventListener('click', function onclick() {
             if(create.parentNode.id == 'wordBox') {
                 document.getElementById('answerBox').appendChild(create);
                 test[i] = create.textContent;
-                s += test[i] + " ㄴㅅㄱ";
+                s += test[i] + " ";
                 console.log(s);
                 
             }else if(create.parentNode.id == 'answerBox') {

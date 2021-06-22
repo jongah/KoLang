@@ -1,13 +1,18 @@
 @charset "utf-8";
 
+@font-face {
+  font-family: apple;
+  src: url(../api/public/font/AppleSDGothicNeoL.ttf);
+}
+
 *{ margin: 0;
   padding: 0;
+  font-family: 'apple';
 } 
 
 a{text-decoration: none;}
 a:link, a:visited, a:hover, a:active{
                   color: #FFFFFF;
-                  font-family: "나눔바른고딕";
                   }
 
 #topMenu {
@@ -40,23 +45,43 @@ a:link, a:visited, a:hover, a:active{
 }
 
 #start {
-       background-color: #fa6b0b;
+  background-color: #fa6b0b;
+}
+
+#start:hover {
+  background-color: #f3ab95;        ;
 }
 
 #my {
-       background-color: #faba0b;
+  background-color: #faba0b;
+}
+
+#my:hover {
+  background-color: #f5dd6a;
 }
 
 #search {
-       background-color: #64c647;
+  background-color: #64c647;
+}
+
+#search:hover {
+  background-color: #a3e98e;
 }
 
 #about {
-       background-color: #2f33af;
+  background-color: #2f33af;
+}
+
+#about:hover {
+  background-color: #7ec5ef;
 }
 
 #dev {
-       background-color: #7e26b0;
+  background-color: #7e26b0;
+}
+
+#dev:hover {
+  background-color: #d293f6;
 }
 
 #log {
@@ -71,9 +96,22 @@ a:link, a:visited, a:hover, a:active{
        font-size: 14pt;
 }
 
-#login { background-color: #f5dd6a;}
+#login {
+  background-color: #f5dd6a;
+}
 
-#logout { background-color: #7ec5ef;}
+#login:hover {
+  background-color: #faba0b;
+}
+
+#logout {
+  background-color: #7ec5ef;
+}
+
+#logout:hover {
+  background-color: #2f33af;
+}
+
           
 
 #orange{ background-color: #fa6b0b;}
@@ -320,8 +358,7 @@ a:link, a:visited, a:hover, a:active{
             font-size: 18px;
             resize: none;
             border: none;
-            outline: none;
-            font-family: '나눔바른고딕';
+            outline: none;;
           }
   
 .text_view::-webkit-scrollbar { width: 15px;
@@ -335,7 +372,6 @@ a:link, a:visited, a:hover, a:active{
 
 .submenu_area{ width: 200px;
                height: 450px;
-               
                position: absolute;
                margin: 110px 0 0 660px;
              }
