@@ -1,11 +1,20 @@
-// 문단을 담을 변수 : let paragraph = "";
-let sentence = "프랑시스 속의 계절이 소녀들의 까닭입니다.";
+// 문단 변수 : let paragraph; // txt 파일 불러오기
+// 문장 변수 : let sentence; // txt 파일을 .으로 구분해서 가져오기
+// 특수문자 제거 문장 : reSentence = sentence.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi,"");
+// 단어 변수 : let word = newSentence.split(' ');
+
+let sentence = "붉은 해가 세수하던 파란 바다 검게 물들고";
 let newSentence = sentence.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi,"");
 
 let word = newSentence.split(' ');
 
 // side menu
 let answer = new Array();
+
+// 여기에 새로운 문장 받아서 새로운 단어 퀴즈 만들기 함수
+function newQuizQuestion() {
+
+}
 
 window.onload = function() {
     // modal
@@ -17,7 +26,7 @@ window.onload = function() {
         document.querySelector('.modal_wrap').style.display ='none';
         document.querySelector('.black_bg').style.display ='none';
     }
-                
+    
     document.getElementById('endBtn').addEventListener('click', onClick);
     document.querySelector('.black_bg').addEventListener('click', offClick);
 
@@ -58,8 +67,9 @@ function knowWordCreate() {
         newDiv.style.background="#fa6b0b";
         console.log('x');
     }
-
     document.getElementById('sideBar').appendChild(newDiv);
+
+    // 함수호출
 }
 
 function unknowWordCreate() {
@@ -68,4 +78,6 @@ function unknowWordCreate() {
     newDiv.appendChild(newText);
     newDiv.style.background="#fa6b0b";
     document.getElementById('sideBar').appendChild(newDiv);
+
+    // 함수호출
 }
