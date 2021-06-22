@@ -12,18 +12,18 @@
     <div id="modal_bg" class="modal_bg"></div>
     <div id="wrap">
       <div id="topMenu">
-        <a href=""><div id="logo"><img src="/Img/logo.png" style="height: 125px; margin-top: 25px; float: right;"></div></a>
+        <a href="/"><div id="logo"><img src="/Img/logo.png" style="height: 125px; margin-top: 25px; float: right;"></div></a>
         
         <div id="nav">
-          <a href = "/auth/start"><button id="start">START</button></a>
-          <a href = "/auth/my"><button id="my">START</button></a>
+          <a href = "/"><button id="start">START</button></a>
+          <a href = "/auth/my"><button id="my">MY</button></a>
           <a href="/search"><button id="search">SEARCH</button></a>
           <a href="/about"><button id="about">ABOUT</button></a>
           <a href="/dev"><button id="dev">DEV</button></a>
         </div>
         <div id="log">
-          <a href="loginPage.html"><button id="login">login</button></a>
-          <button id="logout">logout</button>
+          <a href="/auth/login"><button id="login">login</button></a>
+          <a href="/auth/logout"><button id="logout">logout</button></a>
         </div>
       </div>
 
@@ -40,7 +40,7 @@
               <p id="name">한소희</p>
               <p id="id">sohee1234</p>
               <p id="email">sohee1234@gmail.com</p>
-              <button id="modify">modify</button>
+              <a href="/auth/modify"><button id="modify">MODIFY</button></a>
             </div>
 
             <!-- 점수 -->
@@ -92,7 +92,7 @@
 
     <!-- modal -->
     <div id="modal" class="modal_area">
-      <div class="close_btn">X</div> <!-- 나가는 버튼 -->
+      <a href = '/auth/my'><div class="close_btn">X</div></a> <!-- 나가는 버튼 -->
       <div class="modal_title"></div> <!-- 글 제목 -->
       <div class="main_area"> <!-- 글 본문이 보일 view -->
         <textarea readonly class="text_view"></textarea>
@@ -100,7 +100,7 @@
 
       <!-- 서브 메뉴를 감싸는 area -->
       <div class="submenu_area">
-        <button class="delete_btn">DELETE</button>
+        <a href = "/delete"><button class="delete_btn">DELETE</button></a>
         <div class="score_view">
           <div id="md_word">  <!-- word -->
             <p id="mdwName">word</p>
@@ -122,7 +122,7 @@
             <label class="mdlabel">sentence</label>
             <input type="radio" class="restart_sentencebtn restart_btn" name="mdSelect">
           </div>
-          <input type="submit" id="green" class="submit_restart" value="start">
+          <input type="submit" id="green" class="submit_restart" value="start" onclick="location.href='/auth/dan'">
         </div>
       </div>
     </div>

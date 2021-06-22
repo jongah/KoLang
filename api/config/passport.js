@@ -59,7 +59,7 @@ passport.use(new GoogleStrategy(
         console.log('===이미 가입된 계정입니닷===')
       }
     })
-    done(null, profile.sub);
+    done(null, [profile.sub,profile.given_name]);
   }
 ));
 

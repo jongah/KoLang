@@ -24,9 +24,15 @@ const userSchema = new Schema({
     u_name:{
         type: String
     },
+    email:{
+        type: String
+    },
+    provider:{
+        type: String
+    },
     img:{
         type: String, 
-        default: '../img/testImg.jpg'
+        default: '/img/jongah.jpg'
     },
     color:{
         type: Number,
