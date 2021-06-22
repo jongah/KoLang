@@ -11,7 +11,6 @@ window.onload = function(){
       modal_bg.style.display = "block";
     });
   }
-<<<<<<< HEAD
               
   document.getElementById('.check_scorebtn').addEventListener('click', onClick);
   document.querySelector('.close_btn').addEventListener('click', offClick);              
@@ -20,7 +19,6 @@ window.onload = function(){
 function changeImg() {
   let imgInput = document.getElementById('profileImg');
 }
-=======
 
   for(var i = 0; i<divModals.length; i++){
     divModals[i].addEventListener("click", e => {
@@ -42,6 +40,3 @@ function changeImg() {
         modal_bg.style.display = "none";
     }
   });
-
-};
->>>>>>> db8928b6bfefbda43828bd6966fb2f3a498f5f1e
