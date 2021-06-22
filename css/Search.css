@@ -147,15 +147,20 @@
              
            }
 
-.NationalInstituteKor{ width: 130px;
-                       height: 40px;
+.NationalInstituteKor{ width: 140px;
+                       height: 50px;
                        border: none;
                        border-radius: 15px;
+                       background-color: #fa6b0b;
+                       padding-top: 5px;
                      }
 
-.NationalInstituteEng{ width: 170px;
-                       height: 40px;
+.NationalInstituteEng{ width: 180px;
+                       height: 50px;
                        border: none;
                        border-radius: 15px;
+                       padding-top: 5px;
+                       background-color: #2f33af;
+                       margin-bottom: 10px;
                      }
 
