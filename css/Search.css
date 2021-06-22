@@ -41,23 +41,43 @@
 
 #start {
        background-color: #fa6b0b;
+     }
+     
+#start:hover {
+       background-color: #f3ab95;
 }
-
+     
 #my {
        background-color: #faba0b;
 }
-
-#search {
+     
+#my:hover {
+       background-color: #f5dd6a;
+}
+     
+     #search {
        background-color: #64c647;
-}
-
-#about {
+     }
+     
+     #search:hover {
+       background-color: #a3e98e;
+     }
+     
+     #about {
        background-color: #2f33af;
-}
-
-#dev {
+     }
+     
+     #about:hover {
+       background-color: #7ec5ef;
+     }
+     
+     #dev {
        background-color: #7e26b0;
-}
+     }
+     
+     #dev:hover {
+       background-color: #d293f6;
+     }
 
 #log {
        width: 300px;
@@ -73,7 +93,20 @@
 
 #login {
        background-color: #f5dd6a;
-}
+     }
+     
+     #login:hover {
+       background-color: #faba0b;
+     }
+     
+     #logout {
+       background-color: #7ec5ef;
+     }
+     
+     #logout:hover {
+       background-color: #2f33af;
+     }
+     
 
 #mypage{ background-color: #A3E98E;
         }
