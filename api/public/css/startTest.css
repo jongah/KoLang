@@ -1,0 +1,135 @@
+@charset "utf-8";
+
+@font-face {
+  font-family: apple;
+  src: url(/font/AppleSDGothicNeoL.ttf);
+}
+
+*{ margin: 0;
+   padding: 0;
+   font-family: 'apple';
+ }
+
+a{text-decoration: none;}
+a:link, a:visited, a:hover, a:active{ color: #FFFFFF;
+                                    }
+
+#orange{ background-color: #fa6b0b;}
+   
+#yellow{ background-color: #FABA0B;}
+
+#green{ background-color: #64c647;}
+
+#blue{ background-color: #2F33AF;}
+
+#purple{ background-color: #7E26B0;}
+
+.wrap{ width: 100%;
+       height: 100%;
+       position: fixed;
+      }
+
+ .select_writing_box{ width: 450px;
+                      height: 800px;
+                      position: absolute;
+                      text-align: left;
+                      margin-top: 10px;
+                      padding-top: 20px;
+                    }
+
+.main_view{ width: 900px;
+            height: 800px;
+            position: absolute;
+            vertical-align: middle;
+            margin: 10px 0 0 500px;
+            }
+
+.select_writing{ width: 150px;
+                height: 100px;
+                border: none;
+                border-radius: 13px;
+                color: white;
+                font-size: 20px;
+                margin: 20px 0 20px 250px;
+                box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.2);
+              }
+
+.writing_name{ width: 500px; 
+              height: 50px;
+              border-radius: 30px;
+              margin: auto;
+              text-align: center;
+              color: #FFFFFF;  
+              }
+
+.title{ width: 400px;
+        height: auto;
+        margin-top: 10px;
+        color: #FFFFFF;
+        font-size: 25px;
+        resize: none;
+        border: none;
+        overflow: hidden;
+        font-family: '나눔바른고딕';
+        font-weight: lighter;
+      }
+
+.title::placeholder{ color: rgb(236, 236, 236); 
+                     font-weight: lighter;
+                   }
+
+.writing_in{ width: 700px;
+            height: 500px;
+            border-radius: 30px;
+            margin: auto;
+            margin-top: 40px;
+            padding-top: 20px;
+            color: #FFFFFF;
+            }
+  
+.text_area{ width: 650px;
+             height: 450px;
+             margin: 10px 0 0 25px;
+             font-size: 20px;
+             color: #FFFFFF;
+             resize: none;
+             border: none;
+             font-family: 'AppleSDGothicNeoL';
+             font-weight: lighter;
+            }
+
+.text_area::placeholder{ color: rgb(236, 236, 236); 
+                         font-weight: lighter;
+                       }
+
+.text_area::-webkit-scrollbar { width: 15px;
+                                background-color: #A0A2D3;
+                               }
+                      
+.text_area::-webkit-scrollbar-thumb { height: 50px;
+                                      background-color: #FFFFFF;
+                                     }
+
+.test_start_button{ width: 500px;
+                    height: 60px;
+                    border-radius: 30px;
+                    margin: auto;
+                    margin-top: 40px;
+                    text-align: center;
+                  }
+
+.btn{ width: 20px;
+      height: 20px;
+      font-size: 20px;
+      margin: 18px 0 0 20px;
+    }
+
+.submit_start{ width: 100px;
+               height: 40px;
+               border-radius: 30px;
+               border: none;
+               color: #FFFFFF;
+               font-size: 20px;
+               margin-left: 20px;
+             }
+

@@ -1,0 +1,189 @@
+@font-face {
+    font-family: apple;
+    src: url(/font/AppleSDGothicNeoL.ttf);
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'apple';
+}
+
+#container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+#sideBar {
+    width: 250px;
+    height: 100%;
+    text-align: center;
+    background-color: white;
+    overflow: auto;
+}
+
+#endBtn {
+    width: 125px;
+    height: 55px;
+    margin: 75px 0 100px 0;
+    background-color: #2f33af;
+    border-radius: 25px;
+    color: white;
+    font-size: 18pt;
+    border: none;
+    outline: none;
+}
+
+#sideBar div {
+    width: 100px;
+    height: 45px;
+    border-radius: 25px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+#content {
+    flex: 1;
+    display: flex;
+    height: 100%;
+    background-color: #3b3b3b;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#playSector {
+    width: 100%;
+    height: 675px;
+    display: flex;
+    align-items: center;
+}
+
+#playSector button {
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    font-size: 16pt;
+    padding: 8px 13px;
+    margin: 15px 10px;
+}
+
+#answerBox {
+    width: 550px;
+    height: 350px;
+    background-color: white;
+    border-radius: 25px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#wordBox {
+    width: 575px;
+    margin: 0 auto;
+}
+
+#box {
+    width: 275px;
+    height: 100px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    background: #f5dd6a;
+}
+
+#box button {
+    width: 90px;
+    height: 45px;
+    margin: 0 10px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+}
+
+/* modal */
+.modal_wrap{
+    display: none;
+    width: 800px;
+    height: 600px;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    margin: -300px 0 0 -400px;
+    background:#eee;
+    z-index: 2;
+    text-align: center;
+    border-radius: 40px;
+    color: white;
+}
+
+.black_bg{
+    display: none;
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0, 0,0, 0.5);
+    top:0;
+    left: 0;
+    z-index: 1;
+}
+
+
+
+#title {
+    width: 300px;
+    height: 75px;
+    margin: 0 auto;
+    margin-top: 65px;
+    border-radius: 18px;
+    background-color: #faba0b;
+    line-height: 75px;
+    font-size: 28pt;
+}
+
+#score {
+    font-size: 90pt;
+    display: inline-block;
+    margin-top: 30px;
+    color: #fa6b0b;
+}
+
+#answerWrong {
+    display: flex;
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 110px;
+    height: 45px;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: deeppink;
+}
+
+#answerWrong div {
+    flex: 1;
+    line-height: 45px;
+    font-size: 16pt;
+}
+
+#true, #next {
+    background-color: #fa6b0b;
+}
+
+#wrong, #skip {
+    background-color: #64c647;
+}
+
+.modal_wrap button {
+    width: 115px;
+    height: 55px;
+    border-radius: 50px;
+    margin: 75px 10px 0 10px;
+    background-color: #7e26b0;
+    color: white;
+    font-size: 18pt;
+    border: none;
+    outline: none;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>프로필 수정</title>
+        <link rel="stylesheet" href="/css/modify_profile.css">
+        <script type="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="/js/modify_profile.js"></script>
+    </head>
+    <body>
+        <div id="container">
+            <input type="file" id="profileImg" onclick="changeImg()">
+            </input>
+            <div id="colorBox">
+                <button id="orangeColor" onclick="change('#fa6b0b')">
+                    <img src="/Img/orangeColor.png">
+                </button>
+                <button id="yellowColor" onclick="change('#faba0b')">
+                    <img src="/Img/yellowColor.png">
+                </button>
+                <button id="greenColor" onclick="change('#64c647')">
+                    <img src="/Img/greenColor.png">
+                </button>
+                <button id="blueColor" onclick="change('#2f33af')">
+                    <img src="/Img/blueColor.png">
+                </button>
+                <button id="purpleColor" onclick="change('#7e26b0')">
+                    <img src="/Img/purpleColor.png">
+                </button>
+            </div>
+    
+            <!-- modify button -->
+            <button id="modify">
+                MODIFY
+            </button>
+        </div>
+    </body>
+</html>
