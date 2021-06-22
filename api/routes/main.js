@@ -9,6 +9,9 @@ router.get('/', function (req, res) {
 router.get('/dev', function (req, res) {
     res.render('dev');
 });
+router.get('/about', function (req, res) {
+    res.render('about');
+});
 
 router.get('/search', function (req, res) {
     res.render('search');
