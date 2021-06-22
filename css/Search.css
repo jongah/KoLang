@@ -49,27 +49,26 @@
        background-color: #f5dd6a;
 }
      
-     #search {
+#search {
        background-color: #64c647;
-     }
+}
      
-     #search:hover {
+#search:hover {
        background-color: #a3e98e;
-     }
+}
      
-     #about {
+#about {
        background-color: #2f33af;
-     }
-     
-     #about:hover {
+}
+#about:hover {
        background-color: #7ec5ef;
-     }
+}
      
-     #dev {
+#dev {
        background-color: #7e26b0;
-     }
+}
      
-     #dev:hover {
+#dev:hover {
        background-color: #d293f6;
      }
 
