@@ -65,7 +65,7 @@
     outline: none;
     font-size: 16pt;
     padding: 8px 13px;
-    margin: 15px 10px 0 12.5px;
+    margin: 15px 10px;
 }
 
 #answerBox {
@@ -78,8 +78,7 @@
 }
 
 #wordBox {
-    width: 650px;
-    height: 150px;
+    width: 575px;
     margin: 0 auto;
 }
 
