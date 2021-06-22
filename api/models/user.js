@@ -24,7 +24,7 @@ const userSchema = new Schema({
     u_name:{
         type: String
     },
-    email:{
+    language:{
         type: String
     },
     provider:{
