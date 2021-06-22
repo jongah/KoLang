@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>kolang</title>
+
+    <link rel="stylesheet" href="/css/startTest.css" type="text/css">
+    <script src="/js/startTest.js"></script>
+  </head>
+  <body>
+    <div class="wrap">
+      <div id="start_test">
+        <div class="select_writing_box">
+          <button id="orange" class="select_writing" onclick="openTextFile()">별 헤는 밤</button>
+          <button id="yellow" class="select_writing">애국가</button>
+          <button id="green" class="select_writing">동백꽃 필 무렵</button>
+          <button id="blue" class="select_writing">소나기</button>
+          <button id="purple" class="select_writing">다시 만난 세계</button>
+        </div>
+        <div class="main_view">
+          <div id="purple" class="writing_name">
+            <textarea id="purple" class="title" maxlength="60" rows="1" placeholder="Please enter a title"></textarea> <!-- 변수로 빼기 -->
+          </div>
+          <div id="blue" class="writing_in">
+            <textarea id="blue" class="text_area" placeholder="Please enter a text"></textarea> <!-- 변수로 빼기 -->
+          </div>
+          <div id="yellow" class="test_start_button">
+            <label>word</label>
+            <input type="radio" class="radio_word btn" name="subject" value="word">
+
+            <label>sentence</label>
+            <input type="radio" class="radio_sentence btn" name="subject" value="sentence">
+            <input type="submit" id="green" class="submit_start" value="start">
+          </div>
+        </div>
+      </div> <!-- start_test -->
+    </div> <!-- wrap -->
+  </body>
+</html>

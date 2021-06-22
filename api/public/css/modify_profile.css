@@ -1,6 +1,6 @@
 @font-face {
     font-family: apple;
-    src: url(../api/public/font/AppleSDGothicNeoL.ttf);
+    src: url(/font/AppleSDGothicNeoL.ttf);
   }
 
 * {
