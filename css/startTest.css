@@ -8,7 +8,9 @@
  * {
   margin: 0;
   font-family: 'apple';
-}
+  }
+
+body{overflow: hidden;}
 
 a{text-decoration: none;}
 a:link, a:visited, a:hover, a:active{ color: #FFFFFF;
@@ -26,14 +28,15 @@ a:link, a:visited, a:hover, a:active{ color: #FFFFFF;
 
 #container {
   width: 1000px;
-  height: 800px;
+  height: 750px;
   position: absolute;
-  top: 50%; left: 50%;
+  top: 50%; 
+  left: 50%;
   transform: translate(-50%, -50%);
 }
 
 .select_writing_box{ width: 100px;
-                height: 800px;
+                height: 750px;
                 position: absolute;
                 text-align: left;
                 margin-top: 10px;
@@ -48,30 +51,22 @@ a:link, a:visited, a:hover, a:active{ color: #FFFFFF;
 
 #start_test{ margin: 150px 0 0 150px; }
 
- .select_writing_box{ width: 450px;
-                      height: 800px;
-                      position: absolute;
-                      text-align: left;
-                      margin-top: 10px;
-                      padding-top: 20px;
-                    }
-
 .main_view{ width: 900px;
-      height: 800px;
-      position: absolute;
-      vertical-align: middle;
-      margin: 10px 125px;
-      }
+            height: 750px;
+            position: absolute;
+            vertical-align: middle;
+            margin: 30px 0 0 125px;
+            }
 
 .select_writing{ width: 150px;
-          height: 100px;
-          border: none;
-          border-radius: 13px;
-          color: white;
-          font-size: 20px;
-          margin: 20px 10px;
-          box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.2);
-        }
+                height: 100px;
+                border: none;
+                border-radius: 13px;
+                color: white;
+                font-size: 20px;
+                margin: 20px 10px;
+                box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.2);
+              }
 
 .writing_name{ width: 500px; 
         height: 50px;
@@ -83,21 +78,6 @@ a:link, a:visited, a:hover, a:active{ color: #FFFFFF;
 
 
 .title{ width: 400px;
-  height: auto;
-  margin-top: 10px;
-  color: #FFFFFF;
-  font-size: 25px;
-  resize: none;
-  border: none;
-  overflow: hidden;
-  font-family: '나눔바른고딕';
-  font-weight: lighter;
-}
-
-.title::placeholder{ color: rgb(236, 236, 236); 
-               font-weight: lighter;
-             }
-
         height: auto;
         margin-top: 10px;
         color: #FFFFFF;
@@ -108,6 +88,10 @@ a:link, a:visited, a:hover, a:active{ color: #FFFFFF;
         font-weight: lighter;
         text-align: center;
       }
+
+.title::placeholder{ color: rgb(236, 236, 236); 
+               font-weight: lighter;
+             }
 
 .title::placeholder{ color: rgb(236, 236, 236); 
                      font-weight: lighter;
@@ -124,22 +108,13 @@ a:link, a:visited, a:hover, a:active{ color: #FFFFFF;
       }
 
 .text_area{ width: 650px;
-       height: 450px;
-       margin: 10px 0 0 25px;
-       font-size: 20px;
-       color: #FFFFFF;
-       resize: none;
-       border: none;
-       font-family: 'AppleSDGothicNeoL';
-       font-weight: lighter;
-      }
-             height: 450px;
-             margin: 10px 0 0 25px;
-             font-size: 20px;
-             color: #FFFFFF;
-             resize: none;
-             border: none;
-            }
+            height: 450px;
+            margin: 10px 0 0 25px;
+            font-size: 20px;
+            color: #FFFFFF;
+            resize: none;
+            border: none;
+          }
 
 .text_area::placeholder{ color: rgb(236, 236, 236); 
                    font-weight: lighter;
@@ -165,10 +140,10 @@ a:link, a:visited, a:hover, a:active{ color: #FFFFFF;
        }
 
 .btn{ width: 20px;
-height: 20px;
-font-size: 20px;
-margin: 18px 0 0 20px;
-}
+      height: 20px;
+      font-size: 20px;
+      margin: 17px 25px 0 10px;
+    }
 
 .submit_start{ width: 100px;
          height: 40px;
@@ -178,16 +153,3 @@ margin: 18px 0 0 20px;
          font-size: 20px;
          margin-left: 20px;
        }
-      height: 20px;
-      font-size: 20px;
-      margin: 17px 25px 0 10px;
-    }
-
-.submit_start{ width: 100px;
-               height: 40px;
-               border-radius: 30px;
-               border: none;
-               color: #FFFFFF;
-               font-size: 20px;
-               margin-left: 10px;
-             }

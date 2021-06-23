@@ -109,11 +109,18 @@
 
 #mypage{ background-color: #A3E98E;
         }
+       
+#container{ display: flex;
+            align-items: center;
+          }
 
-.search_box{ width: 100%;
+.search_box{ width: 1000px;
              height: 150px;
              align-items: center;
-             margin-top: 300px;
+             position: absolute;
+             top: 50%;
+             left: 50%;
+             transform: translate(-50%, -50%);
            }
 
 .search_cover{ width: 600px;

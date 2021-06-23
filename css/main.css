@@ -109,21 +109,39 @@ a{text-decoration: none;}
         background-color: #2f33af;
 }
 
+#container{ width: 500px;
+            height: 500px;
+            position: absolute;
+            top: 50%; 
+            left: 50%;
+            transform: translate(-50%, -50%);
+           
+          }
+
 #main_page {
         width: 500px;
         height: 600px;
         margin: auto;
         }
 
-.main_image{ display: flex;
+.main_image{ 
+             width: 450px;
+             height: 400px;
+             margin: auto;
+             margin-top: 30px;
+             overflow: hidden;
+             display: flex;
+             align-items: center;
+             justify-content: center;
+            
            }
 
 #main_phrase{
         width: 350px;
-        height: 80px;
-        background-color: tomato;
+        height: 30px;
         font-size: 25px;
-        align-items: center;
+        display: flex;
+        margin: auto;
 }
 
 .start{ 
@@ -133,7 +151,7 @@ a{text-decoration: none;}
         font-size: 16pt;
         padding: 10px 20px 10px 20px;
         margin: auto;
-        margin-top: 10px;
+        margin-top: 30px;
         border: none;
         color: #FFFFFF;
       }
