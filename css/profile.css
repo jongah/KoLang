@@ -11,9 +11,6 @@
 } 
 
 a{text-decoration: none;}
-a:link, a:visited, a:hover, a:active{
-                  color: #FFFFFF;
-                  }
 
 #topMenu {
        width: 100%;
@@ -122,6 +119,8 @@ a:link, a:visited, a:hover, a:active{
 
 #purple{ background-color: #7E26B0;}
 
+
+
 #profile{ width: 1200px;
           height: 290px;
           margin: auto;
@@ -131,7 +130,7 @@ a:link, a:visited, a:hover, a:active{
               height: 250px;
               background-color: #f5dd6a;
               margin: auto;
-              margin-top: 80px;
+              margin-top: 50px;
               border-radius: 10px;
               box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.2);
             }
