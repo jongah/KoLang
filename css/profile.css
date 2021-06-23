@@ -112,8 +112,6 @@ a:link, a:visited, a:hover, a:active{
   background-color: #2f33af;
 }
 
-          
-
 #orange{ background-color: #fa6b0b;}
         
 #yellow{ background-color: #FABA0B;}
@@ -301,11 +299,15 @@ a:link, a:visited, a:hover, a:active{
 
 /* modal */
 
-#modal_bg{ width: 100%;
-           height: 100%;
+#modal_bg{
            display: none;
            position: absolute;
-           background-color:rgba(0, 0, 0, 0.5);
+           content: "";
+           width: 100%;
+           height: 100%;
+           background-color:rgba(0, 0,0, 0.5);
+           top:0;
+           left: 0;
            z-index: 1;
          }
 
@@ -332,7 +334,7 @@ a:link, a:visited, a:hover, a:active{
             margin: 20px 0 0 840px;
             position: absolute;
             font-size: large;
-            padding-top: 5px;
+            padding-top: 10px;
           }
 
 .modal_title{ width: auto;
@@ -451,9 +453,9 @@ a:link, a:visited, a:hover, a:active{
           margin-left: 30px;
         }
 
-.restart_wordbtn{margin: 30px 0 0 41px;}
+.restart_wordbtn{margin: 30px 0 0 49px;}
 
-.restart_sentencebtn{margin-top: 60px;}
+.restart_sentencebtn{margin: 60px 0 0 11px;}
 
 .submit_restart{ width: 80px;
                  height: 30px;
