@@ -108,8 +108,12 @@
 }
 
 #main_page {
-        text-align: center;
-}
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 150px;
+        }
 
 .main_image{ 
         width: 400px;
