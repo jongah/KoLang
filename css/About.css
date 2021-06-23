@@ -107,28 +107,29 @@
        background-color: #2f33af;
 }
 
-.about_view{ width: 1500px;
+.about_view{ width: 100vw;
              height: 600px;
-             margin: auto;
-             vertical-align: middle;
-             margin-top: 100px;
+             display: flex;
+             align-items: center;
+              justify-content: center;
+              margin-top: 175px;
            }
+
+.about_view div {
+       
+       margin: 0 30px;
+}
 
 .about_image{ width: 500px;
               height: 500px;
-              position: absolute;
-              margin: 50px 0 0 125px;
             }
 
 .about_text{ width: 750px;
              height: 600px;
-             position: absolute;
-             margin-left: 750px;
            }
 
 .about_textarea{ width: 600px;
                  height: 500px;
-                 margin-top: 60px;
                }
 
 .team_title{ font-size: 35px;}
