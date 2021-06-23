@@ -40,6 +40,22 @@ a:link, a:visited, a:hover, a:active{ color: #FFFFFF;
                 padding-top: 20px;
               }
 
+.wrap{ width: 100%;
+       height: 100%;
+       position: fixed;
+       display: flex;
+      }
+
+#start_test{ margin: 150px 0 0 150px; }
+
+ .select_writing_box{ width: 450px;
+                      height: 800px;
+                      position: absolute;
+                      text-align: left;
+                      margin-top: 10px;
+                      padding-top: 20px;
+                    }
+
 .main_view{ width: 900px;
       height: 800px;
       position: absolute;
@@ -82,6 +98,22 @@ a:link, a:visited, a:hover, a:active{ color: #FFFFFF;
                font-weight: lighter;
              }
 
+        height: auto;
+        margin-top: 10px;
+        color: #FFFFFF;
+        font-size: 25px;
+        resize: none;
+        border: none;
+        overflow: hidden;
+        font-weight: lighter;
+        text-align: center;
+      }
+
+.title::placeholder{ color: rgb(236, 236, 236); 
+                     font-weight: lighter;
+                     text-align: center;
+                   }
+
 .writing_in{ width: 700px;
       height: 500px;
       border-radius: 30px;
@@ -101,6 +133,13 @@ a:link, a:visited, a:hover, a:active{ color: #FFFFFF;
        font-family: 'AppleSDGothicNeoL';
        font-weight: lighter;
       }
+             height: 450px;
+             margin: 10px 0 0 25px;
+             font-size: 20px;
+             color: #FFFFFF;
+             resize: none;
+             border: none;
+            }
 
 .text_area::placeholder{ color: rgb(236, 236, 236); 
                    font-weight: lighter;
@@ -122,6 +161,9 @@ a:link, a:visited, a:hover, a:active{ color: #FFFFFF;
               text-align: center;
             }
 
+.rLabel{ font-size: 16pt;
+       }
+
 .btn{ width: 20px;
 height: 20px;
 font-size: 20px;
@@ -136,3 +178,16 @@ margin: 18px 0 0 20px;
          font-size: 20px;
          margin-left: 20px;
        }
+      height: 20px;
+      font-size: 20px;
+      margin: 17px 25px 0 10px;
+    }
+
+.submit_start{ width: 100px;
+               height: 40px;
+               border-radius: 30px;
+               border: none;
+               color: #FFFFFF;
+               font-size: 20px;
+               margin-left: 10px;
+             }

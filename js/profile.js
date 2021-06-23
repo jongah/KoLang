@@ -2,7 +2,10 @@ window.onload = function(){
   const modal = document.getElementById("modal");
   const modal_bg = document.getElementById("modal_bg");
   const btnModals = document.getElementsByClassName("check_btn");
-  const divModals = document.getElementsByClassName("score_box");
+  const divModals = document.getElementsByClassName("score_box"); 
+
+  // modal_bg.style.height = window.innerHeight;
+
 
   // 모달창 띄우기
   for(var i = 0; i<btnModals.length; i++){
@@ -11,14 +14,6 @@ window.onload = function(){
       modal_bg.style.display = "block";
     });
   }
-              
-  document.getElementById('.check_scorebtn').addEventListener('click', onClick);
-  document.querySelector('.close_btn').addEventListener('click', offClick);              
-};
-
-function changeImg() {
-  let imgInput = document.getElementById('profileImg');
-}
 
   for(var i = 0; i<divModals.length; i++){
     divModals[i].addEventListener("click", e => {
@@ -33,10 +28,19 @@ function changeImg() {
     modal.style.display = "none";
     modal_bg.style.display = "none";
   });
-
+  
   window.addEventListener("keyup", e => {
     if(modal.style.display === "flex" && e.key === "Escape") {
-        modal.style.display = "none";
-        modal_bg.style.display = "none";
+      modal.style.display = "none";
+      modal_bg.style.display = "none";
     }
   });
+
+  console.log(window.innerHeight);
+  
+}
+
+function changeImg() {
+  let imgInput = document.getElementById('profileImg');
+}
+
