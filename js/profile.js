@@ -4,6 +4,9 @@ window.onload = function(){
   const btnModals = document.getElementsByClassName("check_btn");
   const divModals = document.getElementsByClassName("score_box"); 
 
+  // modal_bg.style.height = window.innerHeight;
+
+
   // 모달창 띄우기
   for(var i = 0; i<btnModals.length; i++){
     btnModals[i].addEventListener("click", e => {
@@ -32,6 +35,8 @@ window.onload = function(){
       modal_bg.style.display = "none";
     }
   });
+
+  console.log(window.innerHeight);
   
 }
 
